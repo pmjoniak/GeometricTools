@@ -1,0 +1,2207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Files">
+      <UniqueIdentifier>{e654f3da-4734-4774-9a7c-ac6aa1e500bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Applications">
+      <UniqueIdentifier>{f0932286-6e99-49c4-b53b-17c543fb80d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics">
+      <UniqueIdentifier>{05b245e1-d7cc-49f1-9326-184f3c54fab6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Imagics">
+      <UniqueIdentifier>{76d377c4-f958-4e79-9ee8-1a0f31ae932b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\LowLevel">
+      <UniqueIdentifier>{81b0e0aa-9d67-4cea-9942-a3171fb4a933}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics">
+      <UniqueIdentifier>{a800200f-0dab-4fb9-a5ad-be7e1e2bc76b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\Algebra">
+      <UniqueIdentifier>{e6953d0c-22c3-4468-84ff-be98c5ae1101}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\Arithmetic">
+      <UniqueIdentifier>{bd4500de-2d4c-44a6-a77f-98d15941c5ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\Functions">
+      <UniqueIdentifier>{c11d09ce-ef3f-496d-bf28-60cbfd6cf4a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\GeometricPrimitives">
+      <UniqueIdentifier>{d033cb04-9553-4057-ac9c-48a9265b16ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\SIMD">
+      <UniqueIdentifier>{c1e243ee-2d0d-4830-b905-898d5d21f28a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\GeometricPrimitives\2D">
+      <UniqueIdentifier>{292e6e99-8944-487c-998b-5edfe242ce2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\GeometricPrimitives\3D">
+      <UniqueIdentifier>{f2d2b87b-ef31-4e9c-acb7-ab7822238833}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\Approximation">
+      <UniqueIdentifier>{9a003e47-cf5e-4acd-a92b-a4fc9e10b6d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\CurvesSurfacesVolumes">
+      <UniqueIdentifier>{6d32f9e2-28c7-4457-b1c9-3ea4e3df0912}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\Distance">
+      <UniqueIdentifier>{cc3117e1-8ac5-4dc6-8d6f-ea22d96bbce7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\Distance\3D">
+      <UniqueIdentifier>{90c018fc-c5eb-4623-9612-37ee505be14d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\Intersection">
+      <UniqueIdentifier>{22b1c31d-ab77-4807-802a-42609ec35151}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\Intersection\2D">
+      <UniqueIdentifier>{6620b2d3-66f2-4859-9545-5fabb0c402e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\Intersection\3D">
+      <UniqueIdentifier>{75e6e59b-37c0-42f3-9643-efc2a8b9d922}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Physics">
+      <UniqueIdentifier>{c0645db7-0127-493e-aefa-cec792fd12e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Physics\Fluid3">
+      <UniqueIdentifier>{0bf59e61-3ea6-44f3-a76a-8fef7b62db6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Physics\Fluid2">
+      <UniqueIdentifier>{fe23de22-6ee9-41b9-8e61-f2eb995edb37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\ComputationalGeometry">
+      <UniqueIdentifier>{900bea41-51bb-4452-9fad-02260540a92e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\LowLevel\DataTypes">
+      <UniqueIdentifier>{b4baffc7-558c-45b8-82a0-f457e84f61ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\LowLevel\Graphs">
+      <UniqueIdentifier>{bc8728ce-0848-4082-a677-f3cd41b9b270}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\LowLevel\Logger">
+      <UniqueIdentifier>{44d19eba-8b5c-4914-8706-74c525829db9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\LowLevel\Memory">
+      <UniqueIdentifier>{1999632c-3c23-4152-b482-9bd7ebdca33e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\LowLevel\Timer">
+      <UniqueIdentifier>{464b1cd6-5fa1-43f8-911f-7ece9609093f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\NumericalMethods">
+      <UniqueIdentifier>{71047b5b-7f03-4322-8431-e10c8935cddd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\SceneGraph">
+      <UniqueIdentifier>{dd57d373-fce8-4b0b-8b64-52f7195a6b7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\Effects">
+      <UniqueIdentifier>{2de18b58-db10-40fc-9236-823631534cf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\Resources">
+      <UniqueIdentifier>{d93faf90-cced-4d1d-8551-988464e983e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\Resources\Buffers">
+      <UniqueIdentifier>{3d399f7c-66e1-4dca-80fb-fe6b76c0ab06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\Resources\Textures">
+      <UniqueIdentifier>{27697628-aac5-49c8-af1d-0deb19c1589d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\Shaders">
+      <UniqueIdentifier>{b76532cb-0083-489c-81fb-a2f7e46881eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\State">
+      <UniqueIdentifier>{0650c163-e511-4289-8c14-a4906e106995}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\DirectX11">
+      <UniqueIdentifier>{aba297aa-7fe7-4d09-a3f6-323a7406fefa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\DirectX11\DX11">
+      <UniqueIdentifier>{a05d09c9-9352-430d-84b3-36d468b0e669}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\DirectX11\DX11\InputLayout">
+      <UniqueIdentifier>{19b87de8-9d16-43c3-bb0f-c40ff35bf1a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\DirectX11\DX11\Resources">
+      <UniqueIdentifier>{becc73d3-ec5a-4597-ac21-ade77030468e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\DirectX11\DX11\Resources\Buffers">
+      <UniqueIdentifier>{2be3485d-b73d-41e3-803a-136255eaed2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\DirectX11\DX11\Resources\Textures">
+      <UniqueIdentifier>{9a0d9428-2263-4a57-a88d-4836d02617f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\DirectX11\DX11\Shaders">
+      <UniqueIdentifier>{a042dba0-de26-4453-8eeb-06ac10eb9904}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\DirectX11\DX11\State">
+      <UniqueIdentifier>{616e63fc-173c-4b57-a511-244eb0bbeb3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\DirectX11\DXGI">
+      <UniqueIdentifier>{82ae4420-cc63-4e70-883a-2fb9c8668a23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\DirectX11\HLSL">
+      <UniqueIdentifier>{5f3f50a3-ba46-4af8-838a-66b29ccc46a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\DirectX11\HLSL\HLSLI">
+      <UniqueIdentifier>{3082f1b8-2580-4d0d-bb00-0a81ba14bc92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\Containment">
+      <UniqueIdentifier>{b505539a-2d9d-42f1-99f7-5117bb2242b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\Projection">
+      <UniqueIdentifier>{83813244-3409-4656-8799-608ecc5372ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\Intersection\2D\1: Linear-Linear">
+      <UniqueIdentifier>{1bf68a5c-da65-43f2-ac4b-3953b19f0710}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\Intersection\2D\2: Linear-Planar">
+      <UniqueIdentifier>{5e04796c-f3bb-408c-b2ae-57bf5315010c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\Intersection\2D\3: Planar-Planar">
+      <UniqueIdentifier>{cd83f542-2f4d-406a-89b7-00888fb0ef26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\Intersection\3D\1: Linear-Planar">
+      <UniqueIdentifier>{154822c1-d605-44de-ab96-ac8cc49c4470}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\Intersection\3D\2: Linear-Volumetric">
+      <UniqueIdentifier>{64873744-bd22-4d65-95ea-8471e7effee8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\Intersection\3D\3: Planar-Planar">
+      <UniqueIdentifier>{26886b76-7013-45fe-8c26-23a9d7271795}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\Intersection\3D\4: Planar-Volumetric">
+      <UniqueIdentifier>{e1026f55-1dde-468c-b466-a60e18534e85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\Intersection\3D\5: Volumetric-Volumetric">
+      <UniqueIdentifier>{9d2dbf9c-da77-4829-8505-ec21024e8b4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\Approximation\2D">
+      <UniqueIdentifier>{425b55aa-57e7-4ecf-91dc-16782b4783ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\Approximation\3D">
+      <UniqueIdentifier>{48db18a0-9764-4536-83f6-3365de515e86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\Approximation\Polynomial">
+      <UniqueIdentifier>{1a1706c2-2ccf-44e7-8d88-0588d50be447}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\Interpolation">
+      <UniqueIdentifier>{45fb0932-9a86-41b4-ad4c-a689dc6f2f70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Physics\RigidBody">
+      <UniqueIdentifier>{ec93e0d3-3677-4163-91bd-d547eaa04c4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Physics\ParticleSystems">
+      <UniqueIdentifier>{ba5168a6-7f35-4f3a-9118-2c3f0d7ba0c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\Distance\ND">
+      <UniqueIdentifier>{8a1a2afb-aa9b-46cb-8f02-b569c393d34d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\GeometricPrimitives\ND">
+      <UniqueIdentifier>{b22a6bd2-950f-44ac-aff7-1f6b14a74600}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\GteACosEstimate.h">
+      <Filter>Files\Mathematics\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteArc2.h">
+      <Filter>Files\Mathematics\GeometricPrimitives\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteASinEstimate.h">
+      <Filter>Files\Mathematics\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteATanEstimate.h">
+      <Filter>Files\Mathematics\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteAxisAngle.h">
+      <Filter>Files\Mathematics\Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteBitHacks.h">
+      <Filter>Files\Mathematics\Arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteBSNumber.h">
+      <Filter>Files\Mathematics\Arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteBSRational.h">
+      <Filter>Files\Mathematics\Arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteCommand.h">
+      <Filter>Files\Applications</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteConstants.h">
+      <Filter>Files\Mathematics\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteCosEstimate.h">
+      <Filter>Files\Mathematics\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteEnvironment.h">
+      <Filter>Files\Applications</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteEulerAngles.h">
+      <Filter>Files\Mathematics\Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteExp2Estimate.h">
+      <Filter>Files\Mathematics\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteExpEstimate.h">
+      <Filter>Files\Mathematics\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteGMatrix.h">
+      <Filter>Files\Mathematics\Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteGVector.h">
+      <Filter>Files\Mathematics\Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteHistogram.h">
+      <Filter>Files\Imagics</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIEEEBinary.h">
+      <Filter>Files\Mathematics\Arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIEEEBinary16.h">
+      <Filter>Files\Mathematics\Arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteImage.h">
+      <Filter>Files\Imagics</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteImage1.h">
+      <Filter>Files\Imagics</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteImage2.h">
+      <Filter>Files\Imagics</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteImage3.h">
+      <Filter>Files\Imagics</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteImageUtility2.h">
+      <Filter>Files\Imagics</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteImageUtility3.h">
+      <Filter>Files\Imagics</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntelSSE.h">
+      <Filter>Files\Mathematics\SIMD</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteInvSqrtEstimate.h">
+      <Filter>Files\Mathematics\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteLog2Estimate.h">
+      <Filter>Files\Mathematics\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteLogEstimate.h">
+      <Filter>Files\Mathematics\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteMarchingCubes.h">
+      <Filter>Files\Imagics</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteMatrix.h">
+      <Filter>Files\Mathematics\Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteMatrix2x2.h">
+      <Filter>Files\Mathematics\Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteMatrix3x3.h">
+      <Filter>Files\Mathematics\Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteMatrix4x4.h">
+      <Filter>Files\Mathematics\Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteQuaternion.h">
+      <Filter>Files\Mathematics\Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteRotation.h">
+      <Filter>Files\Mathematics\Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteSinEstimate.h">
+      <Filter>Files\Mathematics\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteSqrtEstimate.h">
+      <Filter>Files\Mathematics\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteSurfaceExtractor.h">
+      <Filter>Files\Imagics</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTanEstimate.h">
+      <Filter>Files\Mathematics\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTetrahedron3.h">
+      <Filter>Files\Mathematics\GeometricPrimitives\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTransform.h">
+      <Filter>Files\Mathematics\Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteVector.h">
+      <Filter>Files\Mathematics\Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteVector2.h">
+      <Filter>Files\Mathematics\Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteVector3.h">
+      <Filter>Files\Mathematics\Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteVector4.h">
+      <Filter>Files\Mathematics\Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteWICFileIO.h">
+      <Filter>Files\Applications</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteWindow.h">
+      <Filter>Files\Applications</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteWindowSystem.h">
+      <Filter>Files\Applications</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteBSplineCurve.h">
+      <Filter>Files\Mathematics\CurvesSurfacesVolumes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteBasisFunction.h">
+      <Filter>Files\Mathematics\CurvesSurfacesVolumes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteNURBSCurve.h">
+      <Filter>Files\Mathematics\CurvesSurfacesVolumes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteBSplineSurface.h">
+      <Filter>Files\Mathematics\CurvesSurfacesVolumes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteNURBSSurface.h">
+      <Filter>Files\Mathematics\CurvesSurfacesVolumes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteCircle3.h">
+      <Filter>Files\Mathematics\GeometricPrimitives\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteCylinder3.h">
+      <Filter>Files\Mathematics\GeometricPrimitives\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteEllipse3.h">
+      <Filter>Files\Mathematics\GeometricPrimitives\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTorus3.h">
+      <Filter>Files\Mathematics\GeometricPrimitives\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteBSplineVolume.h">
+      <Filter>Files\Mathematics\CurvesSurfacesVolumes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteNURBSVolume.h">
+      <Filter>Files\Mathematics\CurvesSurfacesVolumes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteBezierCurve.h">
+      <Filter>Files\Mathematics\CurvesSurfacesVolumes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteNaturalSplineCurve.h">
+      <Filter>Files\Mathematics\CurvesSurfacesVolumes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTCBSplineCurve.h">
+      <Filter>Files\Mathematics\CurvesSurfacesVolumes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteBandedMatrix.h">
+      <Filter>Files\Mathematics\Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GtePolygon2.h">
+      <Filter>Files\Mathematics\GeometricPrimitives\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GtePolyhedron3.h">
+      <Filter>Files\Mathematics\GeometricPrimitives\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDCPQuery.h">
+      <Filter>Files\Mathematics\Distance</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteFIQuery.h">
+      <Filter>Files\Mathematics\Intersection</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTIQuery.h">
+      <Filter>Files\Mathematics\Intersection</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrIntervals.h">
+      <Filter>Files\Mathematics\Intersection</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteFrustum3.h">
+      <Filter>Files\Mathematics\GeometricPrimitives\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteMarchingCubesTable.h">
+      <Filter>Files\Imagics</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteFluid3AdjustVelocity.h">
+      <Filter>Files\Physics\Fluid3</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteFluid3Parameters.h">
+      <Filter>Files\Physics\Fluid3</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteFluid3ComputeDivergence.h">
+      <Filter>Files\Physics\Fluid3</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteFluid3EnforceStateBoundary.h">
+      <Filter>Files\Physics\Fluid3</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteFluid3InitializeSource.h">
+      <Filter>Files\Physics\Fluid3</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteFluid3InitializeState.h">
+      <Filter>Files\Physics\Fluid3</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteFluid3SolvePoisson.h">
+      <Filter>Files\Physics\Fluid3</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteFluid3UpdateState.h">
+      <Filter>Files\Physics\Fluid3</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteFluid3.h">
+      <Filter>Files\Physics\Fluid3</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteFluid2AdjustVelocity.h">
+      <Filter>Files\Physics\Fluid2</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteFluid2Parameters.h">
+      <Filter>Files\Physics\Fluid2</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteFluid2ComputeDivergence.h">
+      <Filter>Files\Physics\Fluid2</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteFluid2EnforceStateBoundary.h">
+      <Filter>Files\Physics\Fluid2</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteFluid2InitializeSource.h">
+      <Filter>Files\Physics\Fluid2</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteFluid2InitializeState.h">
+      <Filter>Files\Physics\Fluid2</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteFluid2SolvePoisson.h">
+      <Filter>Files\Physics\Fluid2</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteFluid2UpdateState.h">
+      <Filter>Files\Physics\Fluid2</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteFluid2.h">
+      <Filter>Files\Physics\Fluid2</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDelaunay2.h">
+      <Filter>Files\Mathematics\ComputationalGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDelaunay3.h">
+      <Filter>Files\Mathematics\ComputationalGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GtePrimalQuery2.h">
+      <Filter>Files\Mathematics\ComputationalGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GtePrimalQuery3.h">
+      <Filter>Files\Mathematics\ComputationalGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteNearestNeighborQuery.h">
+      <Filter>Files\Mathematics\ComputationalGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteConvexHull2.h">
+      <Filter>Files\Mathematics\ComputationalGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteEdgeKey.h">
+      <Filter>Files\LowLevel\Graphs</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteETManifoldMesh.h">
+      <Filter>Files\LowLevel\Graphs</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteFeatureKey.h">
+      <Filter>Files\LowLevel\Graphs</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteLogger.h">
+      <Filter>Files\LowLevel\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteLogReporter.h">
+      <Filter>Files\LowLevel\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteLogToFile.h">
+      <Filter>Files\LowLevel\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteLogToMessageBox.h">
+      <Filter>Files\LowLevel\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteLogToOutputWindow.h">
+      <Filter>Files\LowLevel\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteLogToStdout.h">
+      <Filter>Files\LowLevel\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteLogToStringArray.h">
+      <Filter>Files\LowLevel\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteMemory.h">
+      <Filter>Files\LowLevel\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTetrahedronKey.h">
+      <Filter>Files\LowLevel\Graphs</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTriangleKey.h">
+      <Filter>Files\LowLevel\Graphs</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTSManifoldMesh.h">
+      <Filter>Files\LowLevel\Graphs</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteVEManifoldMesh.h">
+      <Filter>Files\LowLevel\Graphs</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteThreadSafeMap.h">
+      <Filter>Files\LowLevel\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteThreadSafeQueue.h">
+      <Filter>Files\LowLevel\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTimer.h">
+      <Filter>Files\LowLevel\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GTEngine.h">
+      <Filter>Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GTEngineDEF.h">
+      <Filter>Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GTEnginePCH.h">
+      <Filter>Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteApprQuery.h">
+      <Filter>Files\Mathematics\Approximation</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteRangeIteration.h">
+      <Filter>Files\LowLevel\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteConvexHull3.h">
+      <Filter>Files\Mathematics\ComputationalGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteConstrainedDelaunay2.h">
+      <Filter>Files\Mathematics\ComputationalGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteArray2.h">
+      <Filter>Files\LowLevel\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteOdeEuler.h">
+      <Filter>Files\Mathematics\NumericalMethods</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteOdeImplicitEuler.h">
+      <Filter>Files\Mathematics\NumericalMethods</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteOdeMidpoint.h">
+      <Filter>Files\Mathematics\NumericalMethods</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteOdeRungeKutta4.h">
+      <Filter>Files\Mathematics\NumericalMethods</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteOdeSolver.h">
+      <Filter>Files\Mathematics\NumericalMethods</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteGaussianElimination.h">
+      <Filter>Files\Mathematics\NumericalMethods</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteLinearSystem.h">
+      <Filter>Files\Mathematics\NumericalMethods</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteSingularValueDecomposition.h">
+      <Filter>Files\Mathematics\NumericalMethods</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteSymmetricEigensolver.h">
+      <Filter>Files\Mathematics\NumericalMethods</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntegration.h">
+      <Filter>Files\Mathematics\NumericalMethods</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteBoundingSphere.h">
+      <Filter>Files\Graphics\SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteCamera.h">
+      <Filter>Files\Graphics\SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteCuller.h">
+      <Filter>Files\Graphics\SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteCullingPlane.h">
+      <Filter>Files\Graphics\SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteNode.h">
+      <Filter>Files\Graphics\SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GtePicker.h">
+      <Filter>Files\Graphics\SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GtePickRecord.h">
+      <Filter>Files\Graphics\SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteSpatial.h">
+      <Filter>Files\Graphics\SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteVisibleSet.h">
+      <Filter>Files\Graphics\SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteConstantColorEffect.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteFont.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteFontArialW400H18.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteLightAmbientEffect.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteLightDirectionPerPixelEffect.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteLightDirectionPerVertexEffect.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteLightPointPerPixelEffect.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteLightPointPerVertexEffect.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteLightSpotPerPixelEffect.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteLightSpotPerVertexEffect.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteOverlayEffect.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTextEffect.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTexture2Effect.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTexture3Effect.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteVertexColorEffect.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteVisualEffect.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteVisual.h">
+      <Filter>Files\Graphics\SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteMeshFactory.h">
+      <Filter>Files\Graphics\SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDataFormat.h">
+      <Filter>Files\Graphics\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteResource.h">
+      <Filter>Files\Graphics\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteBuffer.h">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteConstantBuffer.h">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIndexBuffer.h">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIndexFormat.h">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIndirectArgumentsBuffer.h">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteRawBuffer.h">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteStructuredBuffer.h">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTextureBuffer.h">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTypedBuffer.h">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteVertexBuffer.h">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteVertexFormat.h">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDrawTarget.h">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTextureCube.h">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTextureCubeArray.h">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTextureDS.h">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTextureRT.h">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTextureSingle.h">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTexture.h">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTexture1.h">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTexture1Array.h">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTexture2.h">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTexture2Array.h">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTexture3.h">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTextureArray.h">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteComputeShader.h">
+      <Filter>Files\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteGeometryShader.h">
+      <Filter>Files\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GtePixelShader.h">
+      <Filter>Files\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteShader.h">
+      <Filter>Files\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteShaderFactory.h">
+      <Filter>Files\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteVertexShader.h">
+      <Filter>Files\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteBlendState.h">
+      <Filter>Files\Graphics\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDepthStencilState.h">
+      <Filter>Files\Graphics\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDrawingState.h">
+      <Filter>Files\Graphics\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteRasterizerState.h">
+      <Filter>Files\Graphics\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteSamplerState.h">
+      <Filter>Files\Graphics\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteGraphicsObject.h">
+      <Filter>Files\Graphics\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDXGIAdapter.h">
+      <Filter>Files\Graphics\DirectX11\DXGI</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDXGIOutput.h">
+      <Filter>Files\Graphics\DirectX11\DXGI</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteHLSLBaseBuffer.h">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteHLSLByteAddressBuffer.h">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteHLSLConstantBuffer.h">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteHLSLDefiner.h">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteHLSLFactory.h">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteHLSLParameter.h">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteHLSLResource.h">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteHLSLResourceBindInfo.h">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteHLSLSamplerState.h">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteHLSLShader.h">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteHLSLShaderFactory.h">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteHLSLShaderType.h">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteHLSLShaderVariable.h">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteHLSLStructuredBuffer.h">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteHLSLTexture.h">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteHLSLTextureArray.h">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteHLSLTextureBuffer.h">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteMemberLayout.h">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11Engine.h">
+      <Filter>Files\Graphics\DirectX11\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11GraphicsObject.h">
+      <Filter>Files\Graphics\DirectX11\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11Include.h">
+      <Filter>Files\Graphics\DirectX11\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11PerformanceCounter.h">
+      <Filter>Files\Graphics\DirectX11\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11InputLayout.h">
+      <Filter>Files\Graphics\DirectX11\DX11\InputLayout</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11InputLayoutManager.h">
+      <Filter>Files\Graphics\DirectX11\DX11\InputLayout</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11Buffer.h">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11ConstantBuffer.h">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11IndexBuffer.h">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11IndirectArgumentsBuffer.h">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11RawBuffer.h">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11StructuredBuffer.h">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11TextureBuffer.h">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11VertexBuffer.h">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11DrawTarget.h">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11Texture.h">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11Texture1.h">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11Texture1Array.h">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11Texture2.h">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11Texture2Array.h">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11Texture3.h">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11TextureArray.h">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11TextureCube.h">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11TextureCubeArray.h">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11TextureDS.h">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11TextureRT.h">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11TextureSingle.h">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11Resource.h">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11VertexShader.h">
+      <Filter>Files\Graphics\DirectX11\DX11\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11ComputeShader.h">
+      <Filter>Files\Graphics\DirectX11\DX11\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11GeometryShader.h">
+      <Filter>Files\Graphics\DirectX11\DX11\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11PixelShader.h">
+      <Filter>Files\Graphics\DirectX11\DX11\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11Shader.h">
+      <Filter>Files\Graphics\DirectX11\DX11\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11BlendState.h">
+      <Filter>Files\Graphics\DirectX11\DX11\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11DepthStencilState.h">
+      <Filter>Files\Graphics\DirectX11\DX11\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11DrawingState.h">
+      <Filter>Files\Graphics\DirectX11\DX11\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11RasterizerState.h">
+      <Filter>Files\Graphics\DirectX11\DX11\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDX11SamplerState.h">
+      <Filter>Files\Graphics\DirectX11\DX11\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteRootsBisection.h">
+      <Filter>Files\Mathematics\NumericalMethods</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteRootsPolynomial.h">
+      <Filter>Files\Mathematics\NumericalMethods</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteRootsBrentsMethod.h">
+      <Filter>Files\Mathematics\NumericalMethods</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteContOrientedBox2.h">
+      <Filter>Files\Mathematics\Containment</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteContOrientedBox3.h">
+      <Filter>Files\Mathematics\Containment</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteContSphere3.h">
+      <Filter>Files\Mathematics\Containment</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteContCircle2.h">
+      <Filter>Files\Mathematics\Containment</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteContEllipse2.h">
+      <Filter>Files\Mathematics\Containment</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteContEllipsoid3.h">
+      <Filter>Files\Mathematics\Containment</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteProjection.h">
+      <Filter>Files\Mathematics\Projection</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteContCapsule3.h">
+      <Filter>Files\Mathematics\Containment</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteContCylinder3.h">
+      <Filter>Files\Mathematics\Containment</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteContEllipse2MinCR.h">
+      <Filter>Files\Mathematics\Containment</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteContEllipsoid3MinCR.h">
+      <Filter>Files\Mathematics\Containment</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteContPointInPolygon2.h">
+      <Filter>Files\Mathematics\Containment</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteContPointInPolyhedron3.h">
+      <Filter>Files\Mathematics\Containment</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteContScribeCircle2.h">
+      <Filter>Files\Mathematics\Containment</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteContScribeCircle3Sphere3.h">
+      <Filter>Files\Mathematics\Containment</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteMinimize1.h">
+      <Filter>Files\Mathematics\NumericalMethods</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteMinimizeN.h">
+      <Filter>Files\Mathematics\NumericalMethods</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteSeparatePoints2.h">
+      <Filter>Files\Mathematics\ComputationalGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteSeparatePoints3.h">
+      <Filter>Files\Mathematics\ComputationalGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteMinimumAreaBox2.h">
+      <Filter>Files\Mathematics\ComputationalGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteMinimumVolumeBox3.h">
+      <Filter>Files\Mathematics\ComputationalGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteMinimumAreaCircle2.h">
+      <Filter>Files\Mathematics\ComputationalGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteMinimumVolumeSphere3.h">
+      <Filter>Files\Mathematics\ComputationalGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteAtomicMinMax.h">
+      <Filter>Files\LowLevel\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrLine2Ray2.h">
+      <Filter>Files\Mathematics\Intersection\2D\1: Linear-Linear</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrLine2Segment2.h">
+      <Filter>Files\Mathematics\Intersection\2D\1: Linear-Linear</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrLine2Line2.h">
+      <Filter>Files\Mathematics\Intersection\2D\1: Linear-Linear</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrRay2Segment2.h">
+      <Filter>Files\Mathematics\Intersection\2D\1: Linear-Linear</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrSegment2Segment2.h">
+      <Filter>Files\Mathematics\Intersection\2D\1: Linear-Linear</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrRay2Ray2.h">
+      <Filter>Files\Mathematics\Intersection\2D\1: Linear-Linear</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrLine2AlignedBox2.h">
+      <Filter>Files\Mathematics\Intersection\2D\2: Linear-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrLine2OrientedBox2.h">
+      <Filter>Files\Mathematics\Intersection\2D\2: Linear-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrRay2AlignedBox2.h">
+      <Filter>Files\Mathematics\Intersection\2D\2: Linear-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrRay2OrientedBox2.h">
+      <Filter>Files\Mathematics\Intersection\2D\2: Linear-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrSegment2AlignedBox2.h">
+      <Filter>Files\Mathematics\Intersection\2D\2: Linear-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrSegment2OrientedBox2.h">
+      <Filter>Files\Mathematics\Intersection\2D\2: Linear-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrLine2Circle2.h">
+      <Filter>Files\Mathematics\Intersection\2D\2: Linear-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrRay2Circle2.h">
+      <Filter>Files\Mathematics\Intersection\2D\2: Linear-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrSegment2Circle2.h">
+      <Filter>Files\Mathematics\Intersection\2D\2: Linear-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrLine2Arc2.h">
+      <Filter>Files\Mathematics\Intersection\2D\2: Linear-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrRay2Arc2.h">
+      <Filter>Files\Mathematics\Intersection\2D\2: Linear-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrSegment2Arc2.h">
+      <Filter>Files\Mathematics\Intersection\2D\2: Linear-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrArc2Arc2.h">
+      <Filter>Files\Mathematics\Intersection\2D\2: Linear-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrCircle2Arc2.h">
+      <Filter>Files\Mathematics\Intersection\2D\2: Linear-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrCircle2Circle2.h">
+      <Filter>Files\Mathematics\Intersection\2D\2: Linear-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrOrientedBox2Circle2.h">
+      <Filter>Files\Mathematics\Intersection\2D\3: Planar-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrRay2Triangle2.h">
+      <Filter>Files\Mathematics\Intersection\2D\2: Linear-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrSegment2Triangle2.h">
+      <Filter>Files\Mathematics\Intersection\2D\2: Linear-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrLine2Triangle2.h">
+      <Filter>Files\Mathematics\Intersection\2D\2: Linear-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrOrientedBox2OrientedBox2.h">
+      <Filter>Files\Mathematics\Intersection\2D\3: Planar-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrAlignedBox2AlignedBox2.h">
+      <Filter>Files\Mathematics\Intersection\2D\3: Planar-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrAlignedBox2OrientedBox2.h">
+      <Filter>Files\Mathematics\Intersection\2D\3: Planar-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrAlignedBox3AlignedBox3.h">
+      <Filter>Files\Mathematics\Intersection\3D\5: Volumetric-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrAlignedBox3OrientedBox3.h">
+      <Filter>Files\Mathematics\Intersection\3D\5: Volumetric-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrOrientedBox3OrientedBox3.h">
+      <Filter>Files\Mathematics\Intersection\3D\5: Volumetric-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrCapsule3Capsule3.h">
+      <Filter>Files\Mathematics\Intersection\3D\5: Volumetric-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrOrientedBox3Frustum3.h">
+      <Filter>Files\Mathematics\Intersection\3D\5: Volumetric-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrOrientedBox3Sphere3.h">
+      <Filter>Files\Mathematics\Intersection\3D\5: Volumetric-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrPlane3Capsule3.h">
+      <Filter>Files\Mathematics\Intersection\3D\4: Planar-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrPlane3Cylinder3.h">
+      <Filter>Files\Mathematics\Intersection\3D\4: Planar-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrPlane3Ellipsoid3.h">
+      <Filter>Files\Mathematics\Intersection\3D\4: Planar-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrPlane3OrientedBox3.h">
+      <Filter>Files\Mathematics\Intersection\3D\4: Planar-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrPlane3Circle3.h">
+      <Filter>Files\Mathematics\Intersection\3D\3: Planar-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrPlane3Plane3.h">
+      <Filter>Files\Mathematics\Intersection\3D\3: Planar-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrPlane3Sphere3.h">
+      <Filter>Files\Mathematics\Intersection\3D\4: Planar-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrPlane3Triangle3.h">
+      <Filter>Files\Mathematics\Intersection\3D\3: Planar-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrHalfspace3Capsule3.h">
+      <Filter>Files\Mathematics\Intersection\3D\5: Volumetric-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrHalfspace3Cylinder3.h">
+      <Filter>Files\Mathematics\Intersection\3D\5: Volumetric-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrHalfspace3Ellipsoid3.h">
+      <Filter>Files\Mathematics\Intersection\3D\5: Volumetric-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrHalfspace3OrientedBox3.h">
+      <Filter>Files\Mathematics\Intersection\3D\5: Volumetric-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrHalfspace3Segment3.h">
+      <Filter>Files\Mathematics\Intersection\3D\2: Linear-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrHalfspace3Sphere3.h">
+      <Filter>Files\Mathematics\Intersection\3D\5: Volumetric-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrHalfspace3Triangle3.h">
+      <Filter>Files\Mathematics\Intersection\3D\4: Planar-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrSphere3Cone3.h">
+      <Filter>Files\Mathematics\Intersection\3D\5: Volumetric-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrSphere3Frustum3.h">
+      <Filter>Files\Mathematics\Intersection\3D\5: Volumetric-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrSphere3Sphere3.h">
+      <Filter>Files\Mathematics\Intersection\3D\5: Volumetric-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrLine3AlignedBox3.h">
+      <Filter>Files\Mathematics\Intersection\3D\2: Linear-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrLine3OrientedBox3.h">
+      <Filter>Files\Mathematics\Intersection\3D\2: Linear-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrRay3AlignedBox3.h">
+      <Filter>Files\Mathematics\Intersection\3D\2: Linear-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrRay3OrientedBox3.h">
+      <Filter>Files\Mathematics\Intersection\3D\2: Linear-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrSegment3AlignedBox3.h">
+      <Filter>Files\Mathematics\Intersection\3D\2: Linear-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrSegment3OrientedBox3.h">
+      <Filter>Files\Mathematics\Intersection\3D\2: Linear-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrLine3Capsule3.h">
+      <Filter>Files\Mathematics\Intersection\3D\2: Linear-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrRay3Capsule3.h">
+      <Filter>Files\Mathematics\Intersection\3D\2: Linear-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrSegment3Capsule3.h">
+      <Filter>Files\Mathematics\Intersection\3D\2: Linear-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrLine3Cone3.h">
+      <Filter>Files\Mathematics\Intersection\3D\2: Linear-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrRay3Cone3.h">
+      <Filter>Files\Mathematics\Intersection\3D\2: Linear-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrSegment3Cone3.h">
+      <Filter>Files\Mathematics\Intersection\3D\2: Linear-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrLine3Cylinder3.h">
+      <Filter>Files\Mathematics\Intersection\3D\2: Linear-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrRay3Cylinder3.h">
+      <Filter>Files\Mathematics\Intersection\3D\2: Linear-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrSegment3Cylinder3.h">
+      <Filter>Files\Mathematics\Intersection\3D\2: Linear-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrLine3Ellipsoid3.h">
+      <Filter>Files\Mathematics\Intersection\3D\2: Linear-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrRay3Ellipsoid3.h">
+      <Filter>Files\Mathematics\Intersection\3D\2: Linear-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrSegment3Ellipsoid3.h">
+      <Filter>Files\Mathematics\Intersection\3D\2: Linear-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrLine3Sphere3.h">
+      <Filter>Files\Mathematics\Intersection\3D\2: Linear-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrRay3Sphere3.h">
+      <Filter>Files\Mathematics\Intersection\3D\2: Linear-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrSegment3Sphere3.h">
+      <Filter>Files\Mathematics\Intersection\3D\2: Linear-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrLine3Plane3.h">
+      <Filter>Files\Mathematics\Intersection\3D\1: Linear-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrRay3Plane3.h">
+      <Filter>Files\Mathematics\Intersection\3D\1: Linear-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrSegment3Plane3.h">
+      <Filter>Files\Mathematics\Intersection\3D\1: Linear-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrLine3Triangle3.h">
+      <Filter>Files\Mathematics\Intersection\3D\1: Linear-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrRay3Triangle3.h">
+      <Filter>Files\Mathematics\Intersection\3D\1: Linear-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrSegment3Triangle3.h">
+      <Filter>Files\Mathematics\Intersection\3D\1: Linear-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrEllipse2Ellipse2.h">
+      <Filter>Files\Mathematics\Intersection\2D\3: Planar-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrEllipsoid3Ellipsoid3.h">
+      <Filter>Files\Mathematics\Intersection\3D\5: Volumetric-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteApprCircle2.h">
+      <Filter>Files\Mathematics\Approximation\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteApprEllipse2.h">
+      <Filter>Files\Mathematics\Approximation\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteApprEllipsoid3.h">
+      <Filter>Files\Mathematics\Approximation\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteApprGaussian2.h">
+      <Filter>Files\Mathematics\Approximation\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteApprGaussian3.h">
+      <Filter>Files\Mathematics\Approximation\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteApprGreatCircle3.h">
+      <Filter>Files\Mathematics\Approximation\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteApprHeightLine2.h">
+      <Filter>Files\Mathematics\Approximation\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteApprHeightPlane3.h">
+      <Filter>Files\Mathematics\Approximation\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteApprOrthogonalLine2.h">
+      <Filter>Files\Mathematics\Approximation\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteApprOrthogonalLine3.h">
+      <Filter>Files\Mathematics\Approximation\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteApprOrthogonalPlane3.h">
+      <Filter>Files\Mathematics\Approximation\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteApprParaboloid3.h">
+      <Filter>Files\Mathematics\Approximation\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteApprPolynomial2.h">
+      <Filter>Files\Mathematics\Approximation\Polynomial</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteApprPolynomial3.h">
+      <Filter>Files\Mathematics\Approximation\Polynomial</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteApprPolynomial4.h">
+      <Filter>Files\Mathematics\Approximation\Polynomial</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteApprPolynomialSpecial2.h">
+      <Filter>Files\Mathematics\Approximation\Polynomial</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteApprPolynomialSpecial3.h">
+      <Filter>Files\Mathematics\Approximation\Polynomial</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteApprPolynomialSpecial4.h">
+      <Filter>Files\Mathematics\Approximation\Polynomial</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteApprQuadratic2.h">
+      <Filter>Files\Mathematics\Approximation\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteApprQuadratic3.h">
+      <Filter>Files\Mathematics\Approximation\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteApprSphere3.h">
+      <Filter>Files\Mathematics\Approximation\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntpBilinear2.h">
+      <Filter>Files\Mathematics\Interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntpBicubic2.h">
+      <Filter>Files\Mathematics\Interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntpTrilinear3.h">
+      <Filter>Files\Mathematics\Interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntpTricubic3.h">
+      <Filter>Files\Mathematics\Interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntpAkima1.h">
+      <Filter>Files\Mathematics\Interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntpAkimaUniform1.h">
+      <Filter>Files\Mathematics\Interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntpAkimaUniform2.h">
+      <Filter>Files\Mathematics\Interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntpAkimaUniform3.h">
+      <Filter>Files\Mathematics\Interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntpLinearNonuniform2.h">
+      <Filter>Files\Mathematics\Interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntpLinearNonuniform3.h">
+      <Filter>Files\Mathematics\Interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntpThinPlateSpline2.h">
+      <Filter>Files\Mathematics\Interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntpThinPlateSpline3.h">
+      <Filter>Files\Mathematics\Interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntpQuadraticNonuniform2.h">
+      <Filter>Files\Mathematics\Interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntpSphere2.h">
+      <Filter>Files\Mathematics\Interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntpVectorField2.h">
+      <Filter>Files\Mathematics\Interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDelaunay2Mesh.h">
+      <Filter>Files\Mathematics\ComputationalGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDelaunay3Mesh.h">
+      <Filter>Files\Mathematics\ComputationalGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteLightingConstants.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteLightingEffect.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GtePlanarMesh.h">
+      <Filter>Files\Mathematics\ComputationalGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteGenerateMeshUV.h">
+      <Filter>Files\Mathematics\ComputationalGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteBSplineCurveFit.h">
+      <Filter>Files\Mathematics\CurvesSurfacesVolumes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteBSplineSurfaceFit.h">
+      <Filter>Files\Mathematics\CurvesSurfacesVolumes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GtePolyhedralMassProperties.h">
+      <Filter>Files\Physics\RigidBody</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteRigidBody.h">
+      <Filter>Files\Physics\RigidBody</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteParticleSystem.h">
+      <Filter>Files\Physics\ParticleSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteMassSpringCurve.h">
+      <Filter>Files\Physics\ParticleSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteMassSpringSurface.h">
+      <Filter>Files\Physics\ParticleSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteMassSpringVolume.h">
+      <Filter>Files\Physics\ParticleSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteMassSpringArbitrary.h">
+      <Filter>Files\Physics\ParticleSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteParametricCurve.h">
+      <Filter>Files\Mathematics\CurvesSurfacesVolumes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteFrenetFrame.h">
+      <Filter>Files\Mathematics\CurvesSurfacesVolumes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTubeSurface.h">
+      <Filter>Files\Mathematics\CurvesSurfacesVolumes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteParametricSurface.h">
+      <Filter>Files\Mathematics\CurvesSurfacesVolumes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDarbouxFrame.h">
+      <Filter>Files\Mathematics\CurvesSurfacesVolumes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteRectangleSurface.h">
+      <Filter>Files\Mathematics\CurvesSurfacesVolumes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteComputeModel.h">
+      <Filter>Files\LowLevel\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteUniqueVerticesTriangles.h">
+      <Filter>Files\LowLevel\Graphs</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTriangulateEC.h">
+      <Filter>Files\Mathematics\ComputationalGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteMinHeap.h">
+      <Filter>Files\LowLevel\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTriangulateCDT.h">
+      <Filter>Files\Mathematics\ComputationalGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteBSPrecision.h">
+      <Filter>Files\Mathematics\Arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteUIntegerAP32.h">
+      <Filter>Files\Mathematics\Arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteUIntegerFP32.h">
+      <Filter>Files\Mathematics\Arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteUIntegerALU32.h">
+      <Filter>Files\Mathematics\Arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteSlerpEstimate.h">
+      <Filter>Files\Mathematics\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteChebyshevRatio.h">
+      <Filter>Files\Mathematics\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteSymmetricEigensolver3x3.h">
+      <Filter>Files\Mathematics\NumericalMethods</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteWrapper.h">
+      <Filter>Files\LowLevel\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteSegment.h">
+      <Filter>Files\Mathematics\GeometricPrimitives\ND</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteLine.h">
+      <Filter>Files\Mathematics\GeometricPrimitives\ND</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteRay.h">
+      <Filter>Files\Mathematics\GeometricPrimitives\ND</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteSymmetricEigensolver2x2.h">
+      <Filter>Files\Mathematics\NumericalMethods</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistPointLine.h">
+      <Filter>Files\Mathematics\Distance\ND</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistPointRay.h">
+      <Filter>Files\Mathematics\Distance\ND</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistPointSegment.h">
+      <Filter>Files\Mathematics\Distance\ND</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistSegmentSegment.h">
+      <Filter>Files\Mathematics\Distance\ND</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistSegmentSegmentExact.h">
+      <Filter>Files\Mathematics\Distance\ND</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteAlignedBox.h">
+      <Filter>Files\Mathematics\GeometricPrimitives\ND</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistPointAlignedBox.h">
+      <Filter>Files\Mathematics\Distance\ND</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteOrientedBox.h">
+      <Filter>Files\Mathematics\GeometricPrimitives\ND</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistPointOrientedBox.h">
+      <Filter>Files\Mathematics\Distance\ND</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteHypersphere.h">
+      <Filter>Files\Mathematics\GeometricPrimitives\ND</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteHyperplane.h">
+      <Filter>Files\Mathematics\GeometricPrimitives\ND</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteTriangle.h">
+      <Filter>Files\Mathematics\GeometricPrimitives\ND</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteHyperellipsoid.h">
+      <Filter>Files\Mathematics\GeometricPrimitives\ND</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteHalfspace.h">
+      <Filter>Files\Mathematics\GeometricPrimitives\ND</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistPointHyperellipsoid.h">
+      <Filter>Files\Mathematics\Distance\ND</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistPoint3Circle3.h">
+      <Filter>Files\Mathematics\Distance\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistPoint3Plane3.h">
+      <Filter>Files\Mathematics\Distance\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistPoint3Rectangle3.h">
+      <Filter>Files\Mathematics\Distance\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistPoint3Frustum3.h">
+      <Filter>Files\Mathematics\Distance\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistPoint3Tetrahedron3.h">
+      <Filter>Files\Mathematics\Distance\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistLine3Rectangle3.h">
+      <Filter>Files\Mathematics\Distance\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistLine3Triangle3.h">
+      <Filter>Files\Mathematics\Distance\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistRay3Rectangle3.h">
+      <Filter>Files\Mathematics\Distance\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistRay3Triangle3.h">
+      <Filter>Files\Mathematics\Distance\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistSegment3Rectangle3.h">
+      <Filter>Files\Mathematics\Distance\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistSegment3Triangle3.h">
+      <Filter>Files\Mathematics\Distance\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistLine3AlignedBox3.h">
+      <Filter>Files\Mathematics\Distance\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistLine3OrientedBox3.h">
+      <Filter>Files\Mathematics\Distance\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistRay3AlignedBox3.h">
+      <Filter>Files\Mathematics\Distance\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistRay3OrientedBox3.h">
+      <Filter>Files\Mathematics\Distance\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistSegment3AlignedBox3.h">
+      <Filter>Files\Mathematics\Distance\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistSegment3OrientedBox3.h">
+      <Filter>Files\Mathematics\Distance\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistCircle3Circle3.h">
+      <Filter>Files\Mathematics\Distance\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistRectangle3Rectangle3.h">
+      <Filter>Files\Mathematics\Distance\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistTriangle3Rectangle3.h">
+      <Filter>Files\Mathematics\Distance\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistTriangle3Triangle3.h">
+      <Filter>Files\Mathematics\Distance\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistLineLine.h">
+      <Filter>Files\Mathematics\Distance\ND</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistLineRay.h">
+      <Filter>Files\Mathematics\Distance\ND</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistLineSegment.h">
+      <Filter>Files\Mathematics\Distance\ND</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistRayRay.h">
+      <Filter>Files\Mathematics\Distance\ND</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistRaySegment.h">
+      <Filter>Files\Mathematics\Distance\ND</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteRectangle.h">
+      <Filter>Files\Mathematics\GeometricPrimitives\ND</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteCone.h">
+      <Filter>Files\Mathematics\GeometricPrimitives\ND</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteCapsule.h">
+      <Filter>Files\Mathematics\GeometricPrimitives\ND</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrOrientedBox2Cone2.h">
+      <Filter>Files\Mathematics\Intersection\2D\3: Planar-Planar</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrOrientedBox3Cone3.h">
+      <Filter>Files\Mathematics\Intersection\3D\5: Volumetric-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteIntrAlignedBox3Cone3.h">
+      <Filter>Files\Mathematics\Intersection\3D\5: Volumetric-Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistPointTriangle.h">
+      <Filter>Files\Mathematics\Distance\ND</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteFunctions.h">
+      <Filter>Files\Mathematics\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistPointTriangleExact.h">
+      <Filter>Files\Mathematics\Distance\ND</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistPoint3Cylinder3.h">
+      <Filter>Files\Mathematics\Distance\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteArithmetic.h">
+      <Filter>Files\Mathematics\Arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteConvertCoordinates.h">
+      <Filter>Files\Mathematics\Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GtePolynomial1.h">
+      <Filter>Files\Mathematics\Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GteDistLine3Circle3.h">
+      <Filter>Files\Mathematics\Distance\3D</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Include\GteFloatFunction.hlsli">
+      <Filter>Files\Graphics\DirectX11\HLSL\HLSLI</Filter>
+    </None>
+    <None Include="Include\GteSqrtEstimate.hlsli">
+      <Filter>Files\Graphics\DirectX11\HLSL\HLSLI</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\GteBitHacks.cpp">
+      <Filter>Files\Mathematics\Arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteCommand.cpp">
+      <Filter>Files\Applications</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteEnvironment.cpp">
+      <Filter>Files\Applications</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteHistogram.cpp">
+      <Filter>Files\Imagics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteIEEEBinary16.cpp">
+      <Filter>Files\Mathematics\Arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteImage.cpp">
+      <Filter>Files\Imagics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteImageUtility2.cpp">
+      <Filter>Files\Imagics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteImageUtility3.cpp">
+      <Filter>Files\Imagics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteIntelSSE.cpp">
+      <Filter>Files\Mathematics\SIMD</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteMarchingCubes.cpp">
+      <Filter>Files\Imagics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteWICFileIO.cpp">
+      <Filter>Files\Applications</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteWindow.cpp">
+      <Filter>Files\Applications</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteWindowSystem.cpp">
+      <Filter>Files\Applications</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteMarchingCubesTable.cpp">
+      <Filter>Files\Imagics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteFluid3AdjustVelocity.cpp">
+      <Filter>Files\Physics\Fluid3</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteFluid3ComputeDivergence.cpp">
+      <Filter>Files\Physics\Fluid3</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteFluid3EnforceStateBoundary.cpp">
+      <Filter>Files\Physics\Fluid3</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteFluid3InitializeSource.cpp">
+      <Filter>Files\Physics\Fluid3</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteFluid3InitializeState.cpp">
+      <Filter>Files\Physics\Fluid3</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteFluid3SolvePoisson.cpp">
+      <Filter>Files\Physics\Fluid3</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteFluid3UpdateState.cpp">
+      <Filter>Files\Physics\Fluid3</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteFluid3.cpp">
+      <Filter>Files\Physics\Fluid3</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteFluid2AdjustVelocity.cpp">
+      <Filter>Files\Physics\Fluid2</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteFluid2ComputeDivergence.cpp">
+      <Filter>Files\Physics\Fluid2</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteFluid2EnforceStateBoundary.cpp">
+      <Filter>Files\Physics\Fluid2</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteFluid2InitializeSource.cpp">
+      <Filter>Files\Physics\Fluid2</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteFluid2InitializeState.cpp">
+      <Filter>Files\Physics\Fluid2</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteFluid2SolvePoisson.cpp">
+      <Filter>Files\Physics\Fluid2</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteFluid2UpdateState.cpp">
+      <Filter>Files\Physics\Fluid2</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteFluid2.cpp">
+      <Filter>Files\Physics\Fluid2</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteEdgeKey.cpp">
+      <Filter>Files\LowLevel\Graphs</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteETManifoldMesh.cpp">
+      <Filter>Files\LowLevel\Graphs</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteLogger.cpp">
+      <Filter>Files\LowLevel\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteLogReporter.cpp">
+      <Filter>Files\LowLevel\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteLogToFile.cpp">
+      <Filter>Files\LowLevel\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteLogToMessageBox.cpp">
+      <Filter>Files\LowLevel\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteLogToOutputWindow.cpp">
+      <Filter>Files\LowLevel\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteLogToStdout.cpp">
+      <Filter>Files\LowLevel\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteLogToStringArray.cpp">
+      <Filter>Files\LowLevel\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteTetrahedronKey.cpp">
+      <Filter>Files\LowLevel\Graphs</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteTriangleKey.cpp">
+      <Filter>Files\LowLevel\Graphs</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteTSManifoldMesh.cpp">
+      <Filter>Files\LowLevel\Graphs</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteVEManifoldMesh.cpp">
+      <Filter>Files\LowLevel\Graphs</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteTimer.cpp">
+      <Filter>Files\LowLevel\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GTEnginePCH.cpp">
+      <Filter>Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteBoundingSphere.cpp">
+      <Filter>Files\Graphics\SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteCamera.cpp">
+      <Filter>Files\Graphics\SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteCuller.cpp">
+      <Filter>Files\Graphics\SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteCullingPlane.cpp">
+      <Filter>Files\Graphics\SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteNode.cpp">
+      <Filter>Files\Graphics\SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GtePicker.cpp">
+      <Filter>Files\Graphics\SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GtePickRecord.cpp">
+      <Filter>Files\Graphics\SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteSpatial.cpp">
+      <Filter>Files\Graphics\SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteVisibleSet.cpp">
+      <Filter>Files\Graphics\SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteConstantColorEffect.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteFont.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteFontArialW400H18.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteLightAmbientEffect.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteLightDirectionPerPixelEffect.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteLightDirectionPerVertexEffect.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteLightPointPerPixelEffect.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteLightPointPerVertexEffect.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteLightSpotPerPixelEffect.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteLightSpotPerVertexEffect.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteOverlayEffect.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteTextEffect.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteTexture2Effect.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteTexture3Effect.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteVertexColorEffect.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteVisualEffect.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteMeshFactory.cpp">
+      <Filter>Files\Graphics\SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteVisual.cpp">
+      <Filter>Files\Graphics\SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDataFormat.cpp">
+      <Filter>Files\Graphics\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteResource.cpp">
+      <Filter>Files\Graphics\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteBuffer.cpp">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteConstantBuffer.cpp">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteIndexBuffer.cpp">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteIndirectArgumentsBuffer.cpp">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteRawBuffer.cpp">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteStructuredBuffer.cpp">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteTextureBuffer.cpp">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteTypedBuffer.cpp">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteVertexBuffer.cpp">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteVertexFormat.cpp">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDrawTarget.cpp">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteTexture.cpp">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteTexture1.cpp">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteTexture1Array.cpp">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteTexture2.cpp">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteTexture2Array.cpp">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteTexture3.cpp">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteTextureArray.cpp">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteTextureCube.cpp">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteTextureCubeArray.cpp">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteTextureDS.cpp">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteTextureRT.cpp">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteTextureSingle.cpp">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteComputeShader.cpp">
+      <Filter>Files\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteGeometryShader.cpp">
+      <Filter>Files\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GtePixelShader.cpp">
+      <Filter>Files\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteShader.cpp">
+      <Filter>Files\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteShaderFactory.cpp">
+      <Filter>Files\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteVertexShader.cpp">
+      <Filter>Files\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteBlendState.cpp">
+      <Filter>Files\Graphics\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDepthStencilState.cpp">
+      <Filter>Files\Graphics\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDrawingState.cpp">
+      <Filter>Files\Graphics\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteRasterizerState.cpp">
+      <Filter>Files\Graphics\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteSamplerState.cpp">
+      <Filter>Files\Graphics\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteGraphicsObject.cpp">
+      <Filter>Files\Graphics\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDXGIAdapter.cpp">
+      <Filter>Files\Graphics\DirectX11\DXGI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDXGIOutput.cpp">
+      <Filter>Files\Graphics\DirectX11\DXGI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteHLSLBaseBuffer.cpp">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteHLSLByteAddressBuffer.cpp">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteHLSLConstantBuffer.cpp">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteHLSLDefiner.cpp">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteHLSLParameter.cpp">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteHLSLResource.cpp">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteHLSLResourceBindInfo.cpp">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteHLSLSamplerState.cpp">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteHLSLShader.cpp">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteHLSLShaderFactory.cpp">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteHLSLShaderType.cpp">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteHLSLShaderVariable.cpp">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteHLSLStructuredBuffer.cpp">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteHLSLTexture.cpp">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteHLSLTextureArray.cpp">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteHLSLTextureBuffer.cpp">
+      <Filter>Files\Graphics\DirectX11\HLSL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11Engine.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11GraphicsObject.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11PerformanceCounter.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11InputLayout.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\InputLayout</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11InputLayoutManager.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\InputLayout</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11Buffer.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11ConstantBuffer.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11IndexBuffer.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11IndirectArgumentsBuffer.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11RawBuffer.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11StructuredBuffer.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11TextureBuffer.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11VertexBuffer.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11DrawTarget.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11Texture.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11Texture1.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11Texture1Array.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11Texture2.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11Texture2Array.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11Texture3.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11TextureArray.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11TextureCube.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11TextureCubeArray.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11TextureDS.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11TextureRT.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11TextureSingle.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11Resource.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11VertexShader.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11ComputeShader.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11GeometryShader.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11PixelShader.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11Shader.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11SamplerState.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11BlendState.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11DepthStencilState.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11DrawingState.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteDX11RasterizerState.cpp">
+      <Filter>Files\Graphics\DirectX11\DX11\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteLightingConstants.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteLightingEffect.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteComputeModel.cpp">
+      <Filter>Files\LowLevel\DataTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteBSPrecision.cpp">
+      <Filter>Files\Mathematics\Arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteUIntegerAP32.cpp">
+      <Filter>Files\Mathematics\Arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteWrapper.cpp">
+      <Filter>Files\LowLevel\DataTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GteGenerateMeshUV.cpp">
+      <Filter>Files\Mathematics\ComputationalGeometry</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

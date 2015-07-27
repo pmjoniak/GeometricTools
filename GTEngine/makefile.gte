@@ -1,0 +1,81 @@
+CFG ?= Debug
+
+CC := /usr/bin/g++
+CFLAGS += -c -D__LINUX__ -std=c++11 -fPIC
+INCLUDE := -I Include
+LIBDIR := lib/$(CFG)
+
+ifeq (Debug,$(findstring Debug,$(CFG)))
+CFLAGS += -g -D_DEBUG
+else
+CFLAGS += -O2 -DNDEBUG
+endif
+
+ifeq (Dynamic,$(findstring Dynamic,$(CFG)))
+SOVER = 1
+RELVER = $(SOVER).1
+AR := $(CC)
+ARFLAGS := $(LDFLAGS) -shared -fPIC -Wl,-soname,libgtengine.so.$(SOVER) -o
+LIB := $(LIBDIR)/libgtengine.so.$(RELVER)
+else
+AR := /usr/bin/ar
+ARFLAGS := rs
+LIB := $(LIBDIR)/libgtengine.a
+endif
+
+SRC := \
+GteBitHacks.cpp \
+GteBSPrecision.cpp \
+GteComputeModel.cpp \
+GteEdgeKey.cpp \
+GteETManifoldMesh.cpp \
+GteGenerateMeshUV.cpp \
+GteHistogram.cpp \
+GteIEEEBinary16.cpp \
+GteImage.cpp \
+GteImageUtility2.cpp \
+GteImageUtility3.cpp \
+GteLogger.cpp \
+GteLogToFile.cpp \
+GteLogToStdout.cpp \
+GteLogToStringArray.cpp \
+GteMarchingCubes.cpp \
+GteMarchingCubesTable.cpp \
+GTEnginePCH.cpp \
+GteTetrahedronKey.cpp \
+GteTriangleKey.cpp \
+GteTSManifoldMesh.cpp \
+GteUIntegerAP32.cpp \
+GteVEManifoldMesh.cpp \
+GteWrapper.cpp
+
+OBJDIR := obj/$(CFG)
+OBJ := $(SRC:%.cpp=$(OBJDIR)/%.o)
+
+build : createdir compile setlinks
+
+createdir :
+	@mkdir -p $(LIBDIR)
+	@mkdir -p $(OBJDIR)
+
+compile : $(OBJ)
+	$(AR) $(ARFLAGS) $(LIB) $(OBJDIR)/*.o
+
+setlinks :
+	# The shared libraries are created with extension .so.1.1, so
+	# we need soft links for the applications to find them at run time.
+	cd $(LIBDIR) && \
+	(FILES=`find . -name "*.so.$(RELVER)"`;\
+	ls $$FILES;\
+	for file in $$FILES; do\
+		ln -sfv $$file `basename $$file .so.$(RELVER)`.so.$(SOVER);\
+		ln -sfv $$file `basename $$file .so.$(RELVER)`.so;\
+		done)
+	cd ../..
+
+clean :
+	rm -rf $lib
+	rm -rf $(OBJDIR)
+
+$(OBJDIR)/%.o : Source/%.cpp
+	$(CC) $(INCLUDE) $(CFLAGS) $< -o $@

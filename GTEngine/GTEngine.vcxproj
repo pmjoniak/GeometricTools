@@ -1,0 +1,833 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\GteACosEstimate.h" />
+    <ClInclude Include="Include\GteAlignedBox.h" />
+    <ClInclude Include="Include\GteApprCircle2.h" />
+    <ClInclude Include="Include\GteApprEllipse2.h" />
+    <ClInclude Include="Include\GteApprEllipsoid3.h" />
+    <ClInclude Include="Include\GteApprGaussian2.h" />
+    <ClInclude Include="Include\GteApprGaussian3.h" />
+    <ClInclude Include="Include\GteApprGreatCircle3.h" />
+    <ClInclude Include="Include\GteApprHeightLine2.h" />
+    <ClInclude Include="Include\GteApprHeightPlane3.h" />
+    <ClInclude Include="Include\GteApprOrthogonalLine2.h" />
+    <ClInclude Include="Include\GteApprOrthogonalLine3.h" />
+    <ClInclude Include="Include\GteApprOrthogonalPlane3.h" />
+    <ClInclude Include="Include\GteApprParaboloid3.h" />
+    <ClInclude Include="Include\GteApprPolynomial2.h" />
+    <ClInclude Include="Include\GteApprPolynomial3.h" />
+    <ClInclude Include="Include\GteApprPolynomial4.h" />
+    <ClInclude Include="Include\GteApprPolynomialSpecial2.h" />
+    <ClInclude Include="Include\GteApprPolynomialSpecial3.h" />
+    <ClInclude Include="Include\GteApprPolynomialSpecial4.h" />
+    <ClInclude Include="Include\GteApprQuadratic2.h" />
+    <ClInclude Include="Include\GteApprQuadratic3.h" />
+    <ClInclude Include="Include\GteApprQuery.h" />
+    <ClInclude Include="Include\GteApprSphere3.h" />
+    <ClInclude Include="Include\GteArc2.h" />
+    <ClInclude Include="Include\GteArithmetic.h" />
+    <ClInclude Include="Include\GteArray2.h" />
+    <ClInclude Include="Include\GteASinEstimate.h" />
+    <ClInclude Include="Include\GteATanEstimate.h" />
+    <ClInclude Include="Include\GteAtomicMinMax.h" />
+    <ClInclude Include="Include\GteAxisAngle.h" />
+    <ClInclude Include="Include\GteBandedMatrix.h" />
+    <ClInclude Include="Include\GteBasisFunction.h" />
+    <ClInclude Include="Include\GteBezierCurve.h" />
+    <ClInclude Include="Include\GteBitHacks.h" />
+    <ClInclude Include="Include\GteBlendState.h" />
+    <ClInclude Include="Include\GteBoundingSphere.h" />
+    <ClInclude Include="Include\GteBSNumber.h" />
+    <ClInclude Include="Include\GteBSplineCurve.h" />
+    <ClInclude Include="Include\GteBSplineCurveFit.h" />
+    <ClInclude Include="Include\GteBSplineSurface.h" />
+    <ClInclude Include="Include\GteBSplineSurfaceFit.h" />
+    <ClInclude Include="Include\GteBSplineVolume.h" />
+    <ClInclude Include="Include\GteBSPrecision.h" />
+    <ClInclude Include="Include\GteBSRational.h" />
+    <ClInclude Include="Include\GteBuffer.h" />
+    <ClInclude Include="Include\GteCamera.h" />
+    <ClInclude Include="Include\GteCapsule.h" />
+    <ClInclude Include="Include\GteChebyshevRatio.h" />
+    <ClInclude Include="Include\GteCircle3.h" />
+    <ClInclude Include="Include\GteCommand.h" />
+    <ClInclude Include="Include\GteComputeModel.h" />
+    <ClInclude Include="Include\GteComputeShader.h" />
+    <ClInclude Include="Include\GteCone.h" />
+    <ClInclude Include="Include\GteConstantBuffer.h" />
+    <ClInclude Include="Include\GteConstantColorEffect.h" />
+    <ClInclude Include="Include\GteConstants.h" />
+    <ClInclude Include="Include\GteConstrainedDelaunay2.h" />
+    <ClInclude Include="Include\GteContCapsule3.h" />
+    <ClInclude Include="Include\GteContCircle2.h" />
+    <ClInclude Include="Include\GteContCylinder3.h" />
+    <ClInclude Include="Include\GteContEllipse2.h" />
+    <ClInclude Include="Include\GteContEllipse2MinCR.h" />
+    <ClInclude Include="Include\GteContEllipsoid3.h" />
+    <ClInclude Include="Include\GteContEllipsoid3MinCR.h" />
+    <ClInclude Include="Include\GteContOrientedBox2.h" />
+    <ClInclude Include="Include\GteContOrientedBox3.h" />
+    <ClInclude Include="Include\GteContPointInPolygon2.h" />
+    <ClInclude Include="Include\GteContPointInPolyhedron3.h" />
+    <ClInclude Include="Include\GteContScribeCircle2.h" />
+    <ClInclude Include="Include\GteContScribeCircle3Sphere3.h" />
+    <ClInclude Include="Include\GteContSphere3.h" />
+    <ClInclude Include="Include\GteConvertCoordinates.h" />
+    <ClInclude Include="Include\GteConvexHull2.h" />
+    <ClInclude Include="Include\GteConvexHull3.h" />
+    <ClInclude Include="Include\GteCosEstimate.h" />
+    <ClInclude Include="Include\GteCuller.h" />
+    <ClInclude Include="Include\GteCullingPlane.h" />
+    <ClInclude Include="Include\GteCylinder3.h" />
+    <ClInclude Include="Include\GteDarbouxFrame.h" />
+    <ClInclude Include="Include\GteDataFormat.h" />
+    <ClInclude Include="Include\GteDCPQuery.h" />
+    <ClInclude Include="Include\GteDelaunay2.h" />
+    <ClInclude Include="Include\GteDelaunay2Mesh.h" />
+    <ClInclude Include="Include\GteDelaunay3.h" />
+    <ClInclude Include="Include\GteDelaunay3Mesh.h" />
+    <ClInclude Include="Include\GteDepthStencilState.h" />
+    <ClInclude Include="Include\GteDistCircle3Circle3.h" />
+    <ClInclude Include="Include\GteDistLine3AlignedBox3.h" />
+    <ClInclude Include="Include\GteDistLine3Circle3.h" />
+    <ClInclude Include="Include\GteDistLine3OrientedBox3.h" />
+    <ClInclude Include="Include\GteDistLine3Rectangle3.h" />
+    <ClInclude Include="Include\GteDistLine3Triangle3.h" />
+    <ClInclude Include="Include\GteDistLineLine.h" />
+    <ClInclude Include="Include\GteDistLineRay.h" />
+    <ClInclude Include="Include\GteDistLineSegment.h" />
+    <ClInclude Include="Include\GteDistPoint3Circle3.h" />
+    <ClInclude Include="Include\GteDistPoint3Cylinder3.h" />
+    <ClInclude Include="Include\GteDistPoint3Frustum3.h" />
+    <ClInclude Include="Include\GteDistPoint3Plane3.h" />
+    <ClInclude Include="Include\GteDistPoint3Rectangle3.h" />
+    <ClInclude Include="Include\GteDistPoint3Tetrahedron3.h" />
+    <ClInclude Include="Include\GteDistPointAlignedBox.h" />
+    <ClInclude Include="Include\GteDistPointHyperellipsoid.h" />
+    <ClInclude Include="Include\GteDistPointLine.h" />
+    <ClInclude Include="Include\GteDistPointOrientedBox.h" />
+    <ClInclude Include="Include\GteDistPointRay.h" />
+    <ClInclude Include="Include\GteDistPointSegment.h" />
+    <ClInclude Include="Include\GteDistPointTriangle.h" />
+    <ClInclude Include="Include\GteDistPointTriangleExact.h" />
+    <ClInclude Include="Include\GteDistRay3AlignedBox3.h" />
+    <ClInclude Include="Include\GteDistRay3OrientedBox3.h" />
+    <ClInclude Include="Include\GteDistRay3Rectangle3.h" />
+    <ClInclude Include="Include\GteDistRay3Triangle3.h" />
+    <ClInclude Include="Include\GteDistRayRay.h" />
+    <ClInclude Include="Include\GteDistRaySegment.h" />
+    <ClInclude Include="Include\GteDistRectangle3Rectangle3.h" />
+    <ClInclude Include="Include\GteDistSegment3AlignedBox3.h" />
+    <ClInclude Include="Include\GteDistSegment3OrientedBox3.h" />
+    <ClInclude Include="Include\GteDistSegment3Rectangle3.h" />
+    <ClInclude Include="Include\GteDistSegment3Triangle3.h" />
+    <ClInclude Include="Include\GteDistSegmentSegment.h" />
+    <ClInclude Include="Include\GteDistSegmentSegmentExact.h" />
+    <ClInclude Include="Include\GteDistTriangle3Rectangle3.h" />
+    <ClInclude Include="Include\GteDistTriangle3Triangle3.h" />
+    <ClInclude Include="Include\GteDrawingState.h" />
+    <ClInclude Include="Include\GteDrawTarget.h" />
+    <ClInclude Include="Include\GteDX11BlendState.h" />
+    <ClInclude Include="Include\GteDX11Buffer.h" />
+    <ClInclude Include="Include\GteDX11ComputeShader.h" />
+    <ClInclude Include="Include\GteDX11ConstantBuffer.h" />
+    <ClInclude Include="Include\GteDX11DepthStencilState.h" />
+    <ClInclude Include="Include\GteDX11DrawingState.h" />
+    <ClInclude Include="Include\GteDX11DrawTarget.h" />
+    <ClInclude Include="Include\GteDX11Engine.h" />
+    <ClInclude Include="Include\GteDX11GeometryShader.h" />
+    <ClInclude Include="Include\GteDX11GraphicsObject.h" />
+    <ClInclude Include="Include\GteDX11Include.h" />
+    <ClInclude Include="Include\GteDX11IndexBuffer.h" />
+    <ClInclude Include="Include\GteDX11IndirectArgumentsBuffer.h" />
+    <ClInclude Include="Include\GteDX11InputLayout.h" />
+    <ClInclude Include="Include\GteDX11InputLayoutManager.h" />
+    <ClInclude Include="Include\GteDX11PerformanceCounter.h" />
+    <ClInclude Include="Include\GteDX11PixelShader.h" />
+    <ClInclude Include="Include\GteDX11RasterizerState.h" />
+    <ClInclude Include="Include\GteDX11RawBuffer.h" />
+    <ClInclude Include="Include\GteDX11Resource.h" />
+    <ClInclude Include="Include\GteDX11SamplerState.h" />
+    <ClInclude Include="Include\GteDX11Shader.h" />
+    <ClInclude Include="Include\GteDX11StructuredBuffer.h" />
+    <ClInclude Include="Include\GteDX11Texture.h" />
+    <ClInclude Include="Include\GteDX11Texture1.h" />
+    <ClInclude Include="Include\GteDX11Texture1Array.h" />
+    <ClInclude Include="Include\GteDX11Texture2.h" />
+    <ClInclude Include="Include\GteDX11Texture2Array.h" />
+    <ClInclude Include="Include\GteDX11Texture3.h" />
+    <ClInclude Include="Include\GteDX11TextureArray.h" />
+    <ClInclude Include="Include\GteDX11TextureBuffer.h" />
+    <ClInclude Include="Include\GteDX11TextureCube.h" />
+    <ClInclude Include="Include\GteDX11TextureCubeArray.h" />
+    <ClInclude Include="Include\GteDX11TextureDS.h" />
+    <ClInclude Include="Include\GteDX11TextureRT.h" />
+    <ClInclude Include="Include\GteDX11TextureSingle.h" />
+    <ClInclude Include="Include\GteDX11VertexBuffer.h" />
+    <ClInclude Include="Include\GteDX11VertexShader.h" />
+    <ClInclude Include="Include\GteDXGIAdapter.h" />
+    <ClInclude Include="Include\GteDXGIOutput.h" />
+    <ClInclude Include="Include\GteEdgeKey.h" />
+    <ClInclude Include="Include\GteEllipse3.h" />
+    <ClInclude Include="Include\GteEnvironment.h" />
+    <ClInclude Include="Include\GteETManifoldMesh.h" />
+    <ClInclude Include="Include\GteEulerAngles.h" />
+    <ClInclude Include="Include\GteExp2Estimate.h" />
+    <ClInclude Include="Include\GteExpEstimate.h" />
+    <ClInclude Include="Include\GteFeatureKey.h" />
+    <ClInclude Include="Include\GteFIQuery.h" />
+    <ClInclude Include="Include\GteFluid2.h" />
+    <ClInclude Include="Include\GteFluid2AdjustVelocity.h" />
+    <ClInclude Include="Include\GteFluid2ComputeDivergence.h" />
+    <ClInclude Include="Include\GteFluid2EnforceStateBoundary.h" />
+    <ClInclude Include="Include\GteFluid2InitializeSource.h" />
+    <ClInclude Include="Include\GteFluid2InitializeState.h" />
+    <ClInclude Include="Include\GteFluid2Parameters.h" />
+    <ClInclude Include="Include\GteFluid2SolvePoisson.h" />
+    <ClInclude Include="Include\GteFluid2UpdateState.h" />
+    <ClInclude Include="Include\GteFluid3.h" />
+    <ClInclude Include="Include\GteFluid3AdjustVelocity.h" />
+    <ClInclude Include="Include\GteFluid3ComputeDivergence.h" />
+    <ClInclude Include="Include\GteFluid3EnforceStateBoundary.h" />
+    <ClInclude Include="Include\GteFluid3InitializeSource.h" />
+    <ClInclude Include="Include\GteFluid3InitializeState.h" />
+    <ClInclude Include="Include\GteFluid3Parameters.h" />
+    <ClInclude Include="Include\GteFluid3SolvePoisson.h" />
+    <ClInclude Include="Include\GteFluid3UpdateState.h" />
+    <ClInclude Include="Include\GteFont.h" />
+    <ClInclude Include="Include\GteFontArialW400H18.h" />
+    <ClInclude Include="Include\GteFrenetFrame.h" />
+    <ClInclude Include="Include\GteFrustum3.h" />
+    <ClInclude Include="Include\GteFunctions.h" />
+    <ClInclude Include="Include\GteGaussianElimination.h" />
+    <ClInclude Include="Include\GteGenerateMeshUV.h" />
+    <ClInclude Include="Include\GteGeometryShader.h" />
+    <ClInclude Include="Include\GteGMatrix.h" />
+    <ClInclude Include="Include\GteGraphicsObject.h" />
+    <ClInclude Include="Include\GteGVector.h" />
+    <ClInclude Include="Include\GteHalfspace.h" />
+    <ClInclude Include="Include\GteHistogram.h" />
+    <ClInclude Include="Include\GteHLSLBaseBuffer.h" />
+    <ClInclude Include="Include\GteHLSLByteAddressBuffer.h" />
+    <ClInclude Include="Include\GteHLSLConstantBuffer.h" />
+    <ClInclude Include="Include\GteHLSLDefiner.h" />
+    <ClInclude Include="Include\GteHLSLFactory.h" />
+    <ClInclude Include="Include\GteHLSLParameter.h" />
+    <ClInclude Include="Include\GteHLSLResource.h" />
+    <ClInclude Include="Include\GteHLSLResourceBindInfo.h" />
+    <ClInclude Include="Include\GteHLSLSamplerState.h" />
+    <ClInclude Include="Include\GteHLSLShader.h" />
+    <ClInclude Include="Include\GteHLSLShaderFactory.h" />
+    <ClInclude Include="Include\GteHLSLShaderType.h" />
+    <ClInclude Include="Include\GteHLSLShaderVariable.h" />
+    <ClInclude Include="Include\GteHLSLStructuredBuffer.h" />
+    <ClInclude Include="Include\GteHLSLTexture.h" />
+    <ClInclude Include="Include\GteHLSLTextureArray.h" />
+    <ClInclude Include="Include\GteHLSLTextureBuffer.h" />
+    <ClInclude Include="Include\GteHyperellipsoid.h" />
+    <ClInclude Include="Include\GteHyperplane.h" />
+    <ClInclude Include="Include\GteHypersphere.h" />
+    <ClInclude Include="Include\GteIEEEBinary.h" />
+    <ClInclude Include="Include\GteIEEEBinary16.h" />
+    <ClInclude Include="Include\GteImage.h" />
+    <ClInclude Include="Include\GteImage1.h" />
+    <ClInclude Include="Include\GteImage2.h" />
+    <ClInclude Include="Include\GteImage3.h" />
+    <ClInclude Include="Include\GteImageUtility2.h" />
+    <ClInclude Include="Include\GteImageUtility3.h" />
+    <ClInclude Include="Include\GteIndexBuffer.h" />
+    <ClInclude Include="Include\GteIndexFormat.h" />
+    <ClInclude Include="Include\GteIndirectArgumentsBuffer.h" />
+    <ClInclude Include="Include\GteIntegration.h" />
+    <ClInclude Include="Include\GteIntelSSE.h" />
+    <ClInclude Include="Include\GteIntpAkima1.h" />
+    <ClInclude Include="Include\GteIntpAkimaUniform1.h" />
+    <ClInclude Include="Include\GteIntpAkimaUniform2.h" />
+    <ClInclude Include="Include\GteIntpAkimaUniform3.h" />
+    <ClInclude Include="Include\GteIntpBicubic2.h" />
+    <ClInclude Include="Include\GteIntpBilinear2.h" />
+    <ClInclude Include="Include\GteIntpLinearNonuniform2.h" />
+    <ClInclude Include="Include\GteIntpLinearNonuniform3.h" />
+    <ClInclude Include="Include\GteIntpQuadraticNonuniform2.h" />
+    <ClInclude Include="Include\GteIntpSphere2.h" />
+    <ClInclude Include="Include\GteIntpThinPlateSpline2.h" />
+    <ClInclude Include="Include\GteIntpThinPlateSpline3.h" />
+    <ClInclude Include="Include\GteIntpTricubic3.h" />
+    <ClInclude Include="Include\GteIntpTrilinear3.h" />
+    <ClInclude Include="Include\GteIntpVectorField2.h" />
+    <ClInclude Include="Include\GteIntrAlignedBox2AlignedBox2.h" />
+    <ClInclude Include="Include\GteIntrAlignedBox2OrientedBox2.h" />
+    <ClInclude Include="Include\GteIntrAlignedBox3AlignedBox3.h" />
+    <ClInclude Include="Include\GteIntrAlignedBox3Cone3.h" />
+    <ClInclude Include="Include\GteIntrAlignedBox3OrientedBox3.h" />
+    <ClInclude Include="Include\GteIntrArc2Arc2.h" />
+    <ClInclude Include="Include\GteIntrCapsule3Capsule3.h" />
+    <ClInclude Include="Include\GteIntrCircle2Arc2.h" />
+    <ClInclude Include="Include\GteIntrCircle2Circle2.h" />
+    <ClInclude Include="Include\GteIntrEllipse2Ellipse2.h" />
+    <ClInclude Include="Include\GteIntrEllipsoid3Ellipsoid3.h" />
+    <ClInclude Include="Include\GteIntrHalfspace3Capsule3.h" />
+    <ClInclude Include="Include\GteIntrHalfspace3Cylinder3.h" />
+    <ClInclude Include="Include\GteIntrHalfspace3Ellipsoid3.h" />
+    <ClInclude Include="Include\GteIntrHalfspace3OrientedBox3.h" />
+    <ClInclude Include="Include\GteIntrHalfspace3Segment3.h" />
+    <ClInclude Include="Include\GteIntrHalfspace3Sphere3.h" />
+    <ClInclude Include="Include\GteIntrHalfspace3Triangle3.h" />
+    <ClInclude Include="Include\GteIntrIntervals.h" />
+    <ClInclude Include="Include\GteIntrLine2AlignedBox2.h" />
+    <ClInclude Include="Include\GteIntrLine2Arc2.h" />
+    <ClInclude Include="Include\GteIntrLine2Circle2.h" />
+    <ClInclude Include="Include\GteIntrLine2Line2.h" />
+    <ClInclude Include="Include\GteIntrLine2OrientedBox2.h" />
+    <ClInclude Include="Include\GteIntrLine2Ray2.h" />
+    <ClInclude Include="Include\GteIntrLine2Segment2.h" />
+    <ClInclude Include="Include\GteIntrLine2Triangle2.h" />
+    <ClInclude Include="Include\GteIntrLine3AlignedBox3.h" />
+    <ClInclude Include="Include\GteIntrLine3Capsule3.h" />
+    <ClInclude Include="Include\GteIntrLine3Cone3.h" />
+    <ClInclude Include="Include\GteIntrLine3Cylinder3.h" />
+    <ClInclude Include="Include\GteIntrLine3Ellipsoid3.h" />
+    <ClInclude Include="Include\GteIntrLine3OrientedBox3.h" />
+    <ClInclude Include="Include\GteIntrLine3Plane3.h" />
+    <ClInclude Include="Include\GteIntrLine3Sphere3.h" />
+    <ClInclude Include="Include\GteIntrLine3Triangle3.h" />
+    <ClInclude Include="Include\GteIntrOrientedBox2Circle2.h" />
+    <ClInclude Include="Include\GteIntrOrientedBox2Cone2.h" />
+    <ClInclude Include="Include\GteIntrOrientedBox2OrientedBox2.h" />
+    <ClInclude Include="Include\GteIntrOrientedBox3Cone3.h" />
+    <ClInclude Include="Include\GteIntrOrientedBox3Frustum3.h" />
+    <ClInclude Include="Include\GteIntrOrientedBox3OrientedBox3.h" />
+    <ClInclude Include="Include\GteIntrOrientedBox3Sphere3.h" />
+    <ClInclude Include="Include\GteIntrPlane3Capsule3.h" />
+    <ClInclude Include="Include\GteIntrPlane3Circle3.h" />
+    <ClInclude Include="Include\GteIntrPlane3Cylinder3.h" />
+    <ClInclude Include="Include\GteIntrPlane3Ellipsoid3.h" />
+    <ClInclude Include="Include\GteIntrPlane3OrientedBox3.h" />
+    <ClInclude Include="Include\GteIntrPlane3Plane3.h" />
+    <ClInclude Include="Include\GteIntrPlane3Sphere3.h" />
+    <ClInclude Include="Include\GteIntrPlane3Triangle3.h" />
+    <ClInclude Include="Include\GteIntrRay2AlignedBox2.h" />
+    <ClInclude Include="Include\GteIntrRay2Arc2.h" />
+    <ClInclude Include="Include\GteIntrRay2Circle2.h" />
+    <ClInclude Include="Include\GteIntrRay2OrientedBox2.h" />
+    <ClInclude Include="Include\GteIntrRay2Ray2.h" />
+    <ClInclude Include="Include\GteIntrRay2Segment2.h" />
+    <ClInclude Include="Include\GteIntrRay2Triangle2.h" />
+    <ClInclude Include="Include\GteIntrRay3AlignedBox3.h" />
+    <ClInclude Include="Include\GteIntrRay3Capsule3.h" />
+    <ClInclude Include="Include\GteIntrRay3Cone3.h" />
+    <ClInclude Include="Include\GteIntrRay3Cylinder3.h" />
+    <ClInclude Include="Include\GteIntrRay3Ellipsoid3.h" />
+    <ClInclude Include="Include\GteIntrRay3OrientedBox3.h" />
+    <ClInclude Include="Include\GteIntrRay3Plane3.h" />
+    <ClInclude Include="Include\GteIntrRay3Sphere3.h" />
+    <ClInclude Include="Include\GteIntrRay3Triangle3.h" />
+    <ClInclude Include="Include\GteIntrSegment2AlignedBox2.h" />
+    <ClInclude Include="Include\GteIntrSegment2Arc2.h" />
+    <ClInclude Include="Include\GteIntrSegment2Circle2.h" />
+    <ClInclude Include="Include\GteIntrSegment2OrientedBox2.h" />
+    <ClInclude Include="Include\GteIntrSegment2Segment2.h" />
+    <ClInclude Include="Include\GteIntrSegment2Triangle2.h" />
+    <ClInclude Include="Include\GteIntrSegment3AlignedBox3.h" />
+    <ClInclude Include="Include\GteIntrSegment3Capsule3.h" />
+    <ClInclude Include="Include\GteIntrSegment3Cone3.h" />
+    <ClInclude Include="Include\GteIntrSegment3Cylinder3.h" />
+    <ClInclude Include="Include\GteIntrSegment3Ellipsoid3.h" />
+    <ClInclude Include="Include\GteIntrSegment3OrientedBox3.h" />
+    <ClInclude Include="Include\GteIntrSegment3Plane3.h" />
+    <ClInclude Include="Include\GteIntrSegment3Sphere3.h" />
+    <ClInclude Include="Include\GteIntrSegment3Triangle3.h" />
+    <ClInclude Include="Include\GteIntrSphere3Cone3.h" />
+    <ClInclude Include="Include\GteIntrSphere3Frustum3.h" />
+    <ClInclude Include="Include\GteIntrSphere3Sphere3.h" />
+    <ClInclude Include="Include\GteInvSqrtEstimate.h" />
+    <ClInclude Include="Include\GteLightAmbientEffect.h" />
+    <ClInclude Include="Include\GteLightDirectionPerPixelEffect.h" />
+    <ClInclude Include="Include\GteLightDirectionPerVertexEffect.h" />
+    <ClInclude Include="Include\GteLightingConstants.h" />
+    <ClInclude Include="Include\GteLightingEffect.h" />
+    <ClInclude Include="Include\GteLightPointPerPixelEffect.h" />
+    <ClInclude Include="Include\GteLightPointPerVertexEffect.h" />
+    <ClInclude Include="Include\GteLightSpotPerPixelEffect.h" />
+    <ClInclude Include="Include\GteLightSpotPerVertexEffect.h" />
+    <ClInclude Include="Include\GteLine.h" />
+    <ClInclude Include="Include\GteLinearSystem.h" />
+    <ClInclude Include="Include\GteLog2Estimate.h" />
+    <ClInclude Include="Include\GteLogEstimate.h" />
+    <ClInclude Include="Include\GteLogger.h" />
+    <ClInclude Include="Include\GteLogReporter.h" />
+    <ClInclude Include="Include\GteLogToFile.h" />
+    <ClInclude Include="Include\GteLogToMessageBox.h" />
+    <ClInclude Include="Include\GteLogToOutputWindow.h" />
+    <ClInclude Include="Include\GteLogToStdout.h" />
+    <ClInclude Include="Include\GteLogToStringArray.h" />
+    <ClInclude Include="Include\GteMarchingCubes.h" />
+    <ClInclude Include="Include\GteMarchingCubesTable.h" />
+    <ClInclude Include="Include\GteMassSpringArbitrary.h" />
+    <ClInclude Include="Include\GteMassSpringCurve.h" />
+    <ClInclude Include="Include\GteMassSpringSurface.h" />
+    <ClInclude Include="Include\GteMassSpringVolume.h" />
+    <ClInclude Include="Include\GteMatrix.h" />
+    <ClInclude Include="Include\GteMatrix2x2.h" />
+    <ClInclude Include="Include\GteMatrix3x3.h" />
+    <ClInclude Include="Include\GteMatrix4x4.h" />
+    <ClInclude Include="Include\GteMemberLayout.h" />
+    <ClInclude Include="Include\GteMemory.h" />
+    <ClInclude Include="Include\GteMeshFactory.h" />
+    <ClInclude Include="Include\GteMinHeap.h" />
+    <ClInclude Include="Include\GteMinimize1.h" />
+    <ClInclude Include="Include\GteMinimizeN.h" />
+    <ClInclude Include="Include\GteMinimumAreaBox2.h" />
+    <ClInclude Include="Include\GteMinimumAreaCircle2.h" />
+    <ClInclude Include="Include\GteMinimumVolumeBox3.h" />
+    <ClInclude Include="Include\GteMinimumVolumeSphere3.h" />
+    <ClInclude Include="Include\GteNaturalSplineCurve.h" />
+    <ClInclude Include="Include\GteNearestNeighborQuery.h" />
+    <ClInclude Include="Include\GteNode.h" />
+    <ClInclude Include="Include\GteNURBSCurve.h" />
+    <ClInclude Include="Include\GteNURBSSurface.h" />
+    <ClInclude Include="Include\GteNURBSVolume.h" />
+    <ClInclude Include="Include\GteOdeEuler.h" />
+    <ClInclude Include="Include\GteOdeImplicitEuler.h" />
+    <ClInclude Include="Include\GteOdeMidpoint.h" />
+    <ClInclude Include="Include\GteOdeRungeKutta4.h" />
+    <ClInclude Include="Include\GteOdeSolver.h" />
+    <ClInclude Include="Include\GteOrientedBox.h" />
+    <ClInclude Include="Include\GteOverlayEffect.h" />
+    <ClInclude Include="Include\GteParametricCurve.h" />
+    <ClInclude Include="Include\GteParametricSurface.h" />
+    <ClInclude Include="Include\GteParticleSystem.h" />
+    <ClInclude Include="Include\GtePicker.h" />
+    <ClInclude Include="Include\GtePickRecord.h" />
+    <ClInclude Include="Include\GtePixelShader.h" />
+    <ClInclude Include="Include\GtePlanarMesh.h" />
+    <ClInclude Include="Include\GtePolygon2.h" />
+    <ClInclude Include="Include\GtePolyhedralMassProperties.h" />
+    <ClInclude Include="Include\GtePolyhedron3.h" />
+    <ClInclude Include="Include\GtePolynomial1.h" />
+    <ClInclude Include="Include\GtePrimalQuery2.h" />
+    <ClInclude Include="Include\GtePrimalQuery3.h" />
+    <ClInclude Include="Include\GteProjection.h" />
+    <ClInclude Include="Include\GteQuaternion.h" />
+    <ClInclude Include="Include\GteRangeIteration.h" />
+    <ClInclude Include="Include\GteRasterizerState.h" />
+    <ClInclude Include="Include\GteRawBuffer.h" />
+    <ClInclude Include="Include\GteRay.h" />
+    <ClInclude Include="Include\GteRectangle.h" />
+    <ClInclude Include="Include\GteRectangleSurface.h" />
+    <ClInclude Include="Include\GteResource.h" />
+    <ClInclude Include="Include\GteRigidBody.h" />
+    <ClInclude Include="Include\GteRootsBisection.h" />
+    <ClInclude Include="Include\GteRootsBrentsMethod.h" />
+    <ClInclude Include="Include\GteRootsPolynomial.h" />
+    <ClInclude Include="Include\GteRotation.h" />
+    <ClInclude Include="Include\GteSamplerState.h" />
+    <ClInclude Include="Include\GteSegment.h" />
+    <ClInclude Include="Include\GteSeparatePoints2.h" />
+    <ClInclude Include="Include\GteSeparatePoints3.h" />
+    <ClInclude Include="Include\GteShader.h" />
+    <ClInclude Include="Include\GteShaderFactory.h" />
+    <ClInclude Include="Include\GteSinEstimate.h" />
+    <ClInclude Include="Include\GteSingularValueDecomposition.h" />
+    <ClInclude Include="Include\GteSlerpEstimate.h" />
+    <ClInclude Include="Include\GteSpatial.h" />
+    <ClInclude Include="Include\GteSqrtEstimate.h" />
+    <ClInclude Include="Include\GteStructuredBuffer.h" />
+    <ClInclude Include="Include\GteSurfaceExtractor.h" />
+    <ClInclude Include="Include\GteSymmetricEigensolver.h" />
+    <ClInclude Include="Include\GteSymmetricEigensolver2x2.h" />
+    <ClInclude Include="Include\GteSymmetricEigensolver3x3.h" />
+    <ClInclude Include="Include\GteTanEstimate.h" />
+    <ClInclude Include="Include\GteTCBSplineCurve.h" />
+    <ClInclude Include="Include\GteTetrahedron3.h" />
+    <ClInclude Include="Include\GteTetrahedronKey.h" />
+    <ClInclude Include="Include\GteTextEffect.h" />
+    <ClInclude Include="Include\GteTexture.h" />
+    <ClInclude Include="Include\GteTexture1.h" />
+    <ClInclude Include="Include\GteTexture1Array.h" />
+    <ClInclude Include="Include\GteTexture2.h" />
+    <ClInclude Include="Include\GteTexture2Array.h" />
+    <ClInclude Include="Include\GteTexture2Effect.h" />
+    <ClInclude Include="Include\GteTexture3.h" />
+    <ClInclude Include="Include\GteTexture3Effect.h" />
+    <ClInclude Include="Include\GteTextureArray.h" />
+    <ClInclude Include="Include\GteTextureBuffer.h" />
+    <ClInclude Include="Include\GteTextureCube.h" />
+    <ClInclude Include="Include\GteTextureCubeArray.h" />
+    <ClInclude Include="Include\GteTextureDS.h" />
+    <ClInclude Include="Include\GteTextureRT.h" />
+    <ClInclude Include="Include\GteTextureSingle.h" />
+    <ClInclude Include="Include\GteThreadSafeMap.h" />
+    <ClInclude Include="Include\GteThreadSafeQueue.h" />
+    <ClInclude Include="Include\GteTimer.h" />
+    <ClInclude Include="Include\GteTIQuery.h" />
+    <ClInclude Include="Include\GteTorus3.h" />
+    <ClInclude Include="Include\GteTransform.h" />
+    <ClInclude Include="Include\GteTriangle.h" />
+    <ClInclude Include="Include\GteTriangleKey.h" />
+    <ClInclude Include="Include\GteTriangulateCDT.h" />
+    <ClInclude Include="Include\GteTriangulateEC.h" />
+    <ClInclude Include="Include\GteTSManifoldMesh.h" />
+    <ClInclude Include="Include\GteTubeSurface.h" />
+    <ClInclude Include="Include\GteTypedBuffer.h" />
+    <ClInclude Include="Include\GteUIntegerALU32.h" />
+    <ClInclude Include="Include\GteUIntegerAP32.h" />
+    <ClInclude Include="Include\GteUIntegerFP32.h" />
+    <ClInclude Include="Include\GteUniqueVerticesTriangles.h" />
+    <ClInclude Include="Include\GteVector.h" />
+    <ClInclude Include="Include\GteVector2.h" />
+    <ClInclude Include="Include\GteVector3.h" />
+    <ClInclude Include="Include\GteVector4.h" />
+    <ClInclude Include="Include\GteVEManifoldMesh.h" />
+    <ClInclude Include="Include\GteVertexBuffer.h" />
+    <ClInclude Include="Include\GteVertexColorEffect.h" />
+    <ClInclude Include="Include\GteVertexFormat.h" />
+    <ClInclude Include="Include\GteVertexShader.h" />
+    <ClInclude Include="Include\GteVisibleSet.h" />
+    <ClInclude Include="Include\GteVisual.h" />
+    <ClInclude Include="Include\GteVisualEffect.h" />
+    <ClInclude Include="Include\GteWICFileIO.h" />
+    <ClInclude Include="Include\GteWindow.h" />
+    <ClInclude Include="Include\GteWindowSystem.h" />
+    <ClInclude Include="Include\GTEngine.h" />
+    <ClInclude Include="Include\GTEngineDEF.h" />
+    <ClInclude Include="Include\GTEnginePCH.h" />
+    <ClInclude Include="Include\GteWrapper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Include\GteFloatFunction.hlsli" />
+    <None Include="Include\GteSqrtEstimate.hlsli" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\GteBitHacks.cpp" />
+    <ClCompile Include="Source\GteBlendState.cpp" />
+    <ClCompile Include="Source\GteBoundingSphere.cpp" />
+    <ClCompile Include="Source\GteBSPrecision.cpp" />
+    <ClCompile Include="Source\GteBuffer.cpp" />
+    <ClCompile Include="Source\GteCamera.cpp" />
+    <ClCompile Include="Source\GteCommand.cpp" />
+    <ClCompile Include="Source\GteComputeModel.cpp" />
+    <ClCompile Include="Source\GteComputeShader.cpp" />
+    <ClCompile Include="Source\GteConstantBuffer.cpp" />
+    <ClCompile Include="Source\GteConstantColorEffect.cpp" />
+    <ClCompile Include="Source\GteCuller.cpp" />
+    <ClCompile Include="Source\GteCullingPlane.cpp" />
+    <ClCompile Include="Source\GteDataFormat.cpp" />
+    <ClCompile Include="Source\GteDepthStencilState.cpp" />
+    <ClCompile Include="Source\GteDrawingState.cpp" />
+    <ClCompile Include="Source\GteDrawTarget.cpp" />
+    <ClCompile Include="Source\GteDX11BlendState.cpp" />
+    <ClCompile Include="Source\GteDX11Buffer.cpp" />
+    <ClCompile Include="Source\GteDX11ComputeShader.cpp" />
+    <ClCompile Include="Source\GteDX11ConstantBuffer.cpp" />
+    <ClCompile Include="Source\GteDX11DepthStencilState.cpp" />
+    <ClCompile Include="Source\GteDX11DrawingState.cpp" />
+    <ClCompile Include="Source\GteDX11DrawTarget.cpp" />
+    <ClCompile Include="Source\GteDX11Engine.cpp" />
+    <ClCompile Include="Source\GteDX11GeometryShader.cpp" />
+    <ClCompile Include="Source\GteDX11GraphicsObject.cpp" />
+    <ClCompile Include="Source\GteDX11IndexBuffer.cpp" />
+    <ClCompile Include="Source\GteDX11IndirectArgumentsBuffer.cpp" />
+    <ClCompile Include="Source\GteDX11InputLayout.cpp" />
+    <ClCompile Include="Source\GteDX11InputLayoutManager.cpp" />
+    <ClCompile Include="Source\GteDX11PerformanceCounter.cpp" />
+    <ClCompile Include="Source\GteDX11PixelShader.cpp" />
+    <ClCompile Include="Source\GteDX11RasterizerState.cpp" />
+    <ClCompile Include="Source\GteDX11RawBuffer.cpp" />
+    <ClCompile Include="Source\GteDX11Resource.cpp" />
+    <ClCompile Include="Source\GteDX11SamplerState.cpp" />
+    <ClCompile Include="Source\GteDX11Shader.cpp" />
+    <ClCompile Include="Source\GteDX11StructuredBuffer.cpp" />
+    <ClCompile Include="Source\GteDX11Texture.cpp" />
+    <ClCompile Include="Source\GteDX11Texture1.cpp" />
+    <ClCompile Include="Source\GteDX11Texture1Array.cpp" />
+    <ClCompile Include="Source\GteDX11Texture2.cpp" />
+    <ClCompile Include="Source\GteDX11Texture2Array.cpp" />
+    <ClCompile Include="Source\GteDX11Texture3.cpp" />
+    <ClCompile Include="Source\GteDX11TextureArray.cpp" />
+    <ClCompile Include="Source\GteDX11TextureBuffer.cpp" />
+    <ClCompile Include="Source\GteDX11TextureCube.cpp" />
+    <ClCompile Include="Source\GteDX11TextureCubeArray.cpp" />
+    <ClCompile Include="Source\GteDX11TextureDS.cpp" />
+    <ClCompile Include="Source\GteDX11TextureRT.cpp" />
+    <ClCompile Include="Source\GteDX11TextureSingle.cpp" />
+    <ClCompile Include="Source\GteDX11VertexBuffer.cpp" />
+    <ClCompile Include="Source\GteDX11VertexShader.cpp" />
+    <ClCompile Include="Source\GteDXGIAdapter.cpp" />
+    <ClCompile Include="Source\GteDXGIOutput.cpp" />
+    <ClCompile Include="Source\GteEdgeKey.cpp" />
+    <ClCompile Include="Source\GteEnvironment.cpp" />
+    <ClCompile Include="Source\GteETManifoldMesh.cpp" />
+    <ClCompile Include="Source\GteFluid2.cpp" />
+    <ClCompile Include="Source\GteFluid2AdjustVelocity.cpp" />
+    <ClCompile Include="Source\GteFluid2ComputeDivergence.cpp" />
+    <ClCompile Include="Source\GteFluid2EnforceStateBoundary.cpp" />
+    <ClCompile Include="Source\GteFluid2InitializeSource.cpp" />
+    <ClCompile Include="Source\GteFluid2InitializeState.cpp" />
+    <ClCompile Include="Source\GteFluid2SolvePoisson.cpp" />
+    <ClCompile Include="Source\GteFluid2UpdateState.cpp" />
+    <ClCompile Include="Source\GteFluid3.cpp" />
+    <ClCompile Include="Source\GteFluid3AdjustVelocity.cpp" />
+    <ClCompile Include="Source\GteFluid3ComputeDivergence.cpp" />
+    <ClCompile Include="Source\GteFluid3EnforceStateBoundary.cpp" />
+    <ClCompile Include="Source\GteFluid3InitializeSource.cpp" />
+    <ClCompile Include="Source\GteFluid3InitializeState.cpp" />
+    <ClCompile Include="Source\GteFluid3SolvePoisson.cpp" />
+    <ClCompile Include="Source\GteFluid3UpdateState.cpp" />
+    <ClCompile Include="Source\GteFont.cpp" />
+    <ClCompile Include="Source\GteFontArialW400H18.cpp" />
+    <ClCompile Include="Source\GteGenerateMeshUV.cpp" />
+    <ClCompile Include="Source\GteGeometryShader.cpp" />
+    <ClCompile Include="Source\GteGraphicsObject.cpp" />
+    <ClCompile Include="Source\GteHistogram.cpp" />
+    <ClCompile Include="Source\GteHLSLBaseBuffer.cpp" />
+    <ClCompile Include="Source\GteHLSLByteAddressBuffer.cpp" />
+    <ClCompile Include="Source\GteHLSLConstantBuffer.cpp" />
+    <ClCompile Include="Source\GteHLSLDefiner.cpp" />
+    <ClCompile Include="Source\GteHLSLParameter.cpp" />
+    <ClCompile Include="Source\GteHLSLResource.cpp" />
+    <ClCompile Include="Source\GteHLSLResourceBindInfo.cpp" />
+    <ClCompile Include="Source\GteHLSLSamplerState.cpp" />
+    <ClCompile Include="Source\GteHLSLShader.cpp" />
+    <ClCompile Include="Source\GteHLSLShaderFactory.cpp" />
+    <ClCompile Include="Source\GteHLSLShaderType.cpp" />
+    <ClCompile Include="Source\GteHLSLShaderVariable.cpp" />
+    <ClCompile Include="Source\GteHLSLStructuredBuffer.cpp" />
+    <ClCompile Include="Source\GteHLSLTexture.cpp" />
+    <ClCompile Include="Source\GteHLSLTextureArray.cpp" />
+    <ClCompile Include="Source\GteHLSLTextureBuffer.cpp" />
+    <ClCompile Include="Source\GteIEEEBinary16.cpp" />
+    <ClCompile Include="Source\GteImage.cpp" />
+    <ClCompile Include="Source\GteImageUtility2.cpp" />
+    <ClCompile Include="Source\GteImageUtility3.cpp" />
+    <ClCompile Include="Source\GteIndexBuffer.cpp" />
+    <ClCompile Include="Source\GteIndirectArgumentsBuffer.cpp" />
+    <ClCompile Include="Source\GteIntelSSE.cpp" />
+    <ClCompile Include="Source\GteLightAmbientEffect.cpp" />
+    <ClCompile Include="Source\GteLightDirectionPerPixelEffect.cpp" />
+    <ClCompile Include="Source\GteLightDirectionPerVertexEffect.cpp" />
+    <ClCompile Include="Source\GteLightingConstants.cpp" />
+    <ClCompile Include="Source\GteLightingEffect.cpp" />
+    <ClCompile Include="Source\GteLightPointPerPixelEffect.cpp" />
+    <ClCompile Include="Source\GteLightPointPerVertexEffect.cpp" />
+    <ClCompile Include="Source\GteLightSpotPerPixelEffect.cpp" />
+    <ClCompile Include="Source\GteLightSpotPerVertexEffect.cpp" />
+    <ClCompile Include="Source\GteLogger.cpp" />
+    <ClCompile Include="Source\GteLogReporter.cpp" />
+    <ClCompile Include="Source\GteLogToFile.cpp" />
+    <ClCompile Include="Source\GteLogToMessageBox.cpp" />
+    <ClCompile Include="Source\GteLogToOutputWindow.cpp" />
+    <ClCompile Include="Source\GteLogToStdout.cpp" />
+    <ClCompile Include="Source\GteLogToStringArray.cpp" />
+    <ClCompile Include="Source\GteMarchingCubes.cpp" />
+    <ClCompile Include="Source\GteMarchingCubesTable.cpp" />
+    <ClCompile Include="Source\GteMeshFactory.cpp" />
+    <ClCompile Include="Source\GteNode.cpp" />
+    <ClCompile Include="Source\GteOverlayEffect.cpp" />
+    <ClCompile Include="Source\GtePicker.cpp" />
+    <ClCompile Include="Source\GtePickRecord.cpp" />
+    <ClCompile Include="Source\GtePixelShader.cpp" />
+    <ClCompile Include="Source\GteRasterizerState.cpp" />
+    <ClCompile Include="Source\GteRawBuffer.cpp" />
+    <ClCompile Include="Source\GteResource.cpp" />
+    <ClCompile Include="Source\GteSamplerState.cpp" />
+    <ClCompile Include="Source\GteShader.cpp" />
+    <ClCompile Include="Source\GteShaderFactory.cpp" />
+    <ClCompile Include="Source\GteSpatial.cpp" />
+    <ClCompile Include="Source\GteStructuredBuffer.cpp" />
+    <ClCompile Include="Source\GteTetrahedronKey.cpp" />
+    <ClCompile Include="Source\GteTextEffect.cpp" />
+    <ClCompile Include="Source\GteTexture.cpp" />
+    <ClCompile Include="Source\GteTexture1.cpp" />
+    <ClCompile Include="Source\GteTexture1Array.cpp" />
+    <ClCompile Include="Source\GteTexture2.cpp" />
+    <ClCompile Include="Source\GteTexture2Array.cpp" />
+    <ClCompile Include="Source\GteTexture2Effect.cpp" />
+    <ClCompile Include="Source\GteTexture3.cpp" />
+    <ClCompile Include="Source\GteTexture3Effect.cpp" />
+    <ClCompile Include="Source\GteTextureArray.cpp" />
+    <ClCompile Include="Source\GteTextureBuffer.cpp" />
+    <ClCompile Include="Source\GteTextureCube.cpp" />
+    <ClCompile Include="Source\GteTextureCubeArray.cpp" />
+    <ClCompile Include="Source\GteTextureDS.cpp" />
+    <ClCompile Include="Source\GteTextureRT.cpp" />
+    <ClCompile Include="Source\GteTextureSingle.cpp" />
+    <ClCompile Include="Source\GteTimer.cpp" />
+    <ClCompile Include="Source\GteTriangleKey.cpp" />
+    <ClCompile Include="Source\GteTSManifoldMesh.cpp" />
+    <ClCompile Include="Source\GteTypedBuffer.cpp" />
+    <ClCompile Include="Source\GteUIntegerAP32.cpp" />
+    <ClCompile Include="Source\GteVEManifoldMesh.cpp" />
+    <ClCompile Include="Source\GteVertexBuffer.cpp" />
+    <ClCompile Include="Source\GteVertexColorEffect.cpp" />
+    <ClCompile Include="Source\GteVertexFormat.cpp" />
+    <ClCompile Include="Source\GteVertexShader.cpp" />
+    <ClCompile Include="Source\GteVisibleSet.cpp" />
+    <ClCompile Include="Source\GteVisual.cpp" />
+    <ClCompile Include="Source\GteVisualEffect.cpp" />
+    <ClCompile Include="Source\GteWICFileIO.cpp" />
+    <ClCompile Include="Source\GteWindow.cpp" />
+    <ClCompile Include="Source\GteWindowSystem.cpp" />
+    <ClCompile Include="Source\GTEnginePCH.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\GteWrapper.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{702CEC70-EE3E-43A0-8D93-48B58FA50D3C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GTEngine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>_Output\$(PlatformToolset)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>_Output\$(PlatformToolset)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>_Output\$(PlatformToolset)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>_Output\$(PlatformToolset)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>_Output\$(PlatformToolset)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>_Output\$(PlatformToolset)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>_Output\$(PlatformToolset)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>_Output\$(PlatformToolset)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Include</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PrecompiledHeaderFile>GTEnginePCH.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Include</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PrecompiledHeaderFile>GTEnginePCH.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Include</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PrecompiledHeaderFile>GTEnginePCH.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Include</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PrecompiledHeaderFile>GTEnginePCH.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
