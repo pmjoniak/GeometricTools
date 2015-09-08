@@ -8,4 +8,4 @@ add_definitions(-DUNICODE)
 include_directories (GTEngine/Include)
 add_subdirectory (GTEngine/Source)
 
-install (DIRECTORY GTEngine/Include DESTINATION include FILES_MATCHING PATTERN "*.h")
+install (DIRECTORY GTEngine/Include/ DESTINATION include FILES_MATCHING PATTERN "*.h")
