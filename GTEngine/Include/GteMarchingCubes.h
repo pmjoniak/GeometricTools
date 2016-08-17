@@ -57,6 +57,7 @@ protected:
     int mTable[256][41];
     int mEntry;
 
+#undef VSTART
     enum GTE_IMPEXP
     {
         VSTART = 2,
