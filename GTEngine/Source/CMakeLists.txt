@@ -2,7 +2,11 @@ set (MODULE_NAME geometric_tools)
 
 # Get all compilation units.
 if(__LINUX__ OR __MAC_OS_X__)
-	file (GLOB ${MODULE_NAME}_SRCS *Logger.cpp)
+	set(${MODULE_NAME}_SRCS ${${MODULE_NAME}_SRCS} "GteEdgeKey.cpp")
+	set(${MODULE_NAME}_SRCS ${${MODULE_NAME}_SRCS} "GteETManifoldMesh.cpp")
+	set(${MODULE_NAME}_SRCS ${${MODULE_NAME}_SRCS} "GteLogger.cpp")
+	set(${MODULE_NAME}_SRCS ${${MODULE_NAME}_SRCS} "GteTriangleKey.cpp")
+	# file (GLOB ${MODULE_NAME}_SRCS *Logger.cpp)
 	# string (REGEX REPLACE "[^;]*GteDX[^;]*;" "" ${MODULE_NAME}_SRCS "${${MODULE_NAME}_SRCS}")
 	# string (REGEX REPLACE "[^;]*GteComputeShader[^;]*;" "" ${MODULE_NAME}_SRCS "${${MODULE_NAME}_SRCS}")
 	# string (REGEX REPLACE "[^;]*GteConstantColorEffect[^;]*;" "" ${MODULE_NAME}_SRCS "${${MODULE_NAME}_SRCS}")
