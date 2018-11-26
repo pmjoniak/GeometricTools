@@ -1,9 +1,9 @@
-// Geometric Tools LLC, Redmond WA 98052
-// Copyright (c) 1998-2015
+// David Eberly, Geometric Tools, Redmond WA 98052
+// Copyright (c) 1998-2018
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
-// File Version: 1.0.1 (2014/09/30)
+// File Version: 3.0.1 (2016/07/01)
 
 #include <cassert>
 #include <fstream>
@@ -32,10 +32,8 @@ struct Prototype
     std::vector<std::string> inputNames;
 };
 
-std::string gCommentLine =
-    "//----------------------------------------------------------------------------";
+std::string gCommentLine = "";
 
-//----------------------------------------------------------------------------
 void WriteOpenGLVersion(std::ofstream& output)
 {
     std::ifstream input("Version.txt");
@@ -50,7 +48,7 @@ void WriteOpenGLVersion(std::ofstream& output)
 
     input.close();
 }
-//----------------------------------------------------------------------------
+
 void WriteOpenGLInitialize(std::ofstream& output)
 {
     std::ifstream input("Initialize.txt");
@@ -65,7 +63,7 @@ void WriteOpenGLInitialize(std::ofstream& output)
 
     input.close();
 }
-//----------------------------------------------------------------------------
+
 std::string GetFunctionPointerType(std::string const& line)
 {
     std::string::size_type begin = line.find("PFNGL");
@@ -77,7 +75,7 @@ std::string GetFunctionPointerType(std::string const& line)
     assert(end != std::string::npos);
     return line.substr(begin, end - begin);
 }
-//----------------------------------------------------------------------------
+
 Prototype ParseFunctionPrototype(std::string const& line)
 {
     Prototype result;
@@ -183,7 +181,7 @@ Prototype ParseFunctionPrototype(std::string const& line)
     assert(i < imax);
     return result;
 }
-//----------------------------------------------------------------------------
+
 void BuildStringArray(std::string const& version,
     std::vector<std::string> const& pfntypes,
     std::vector<Prototype> const& fnprotos,
@@ -299,22 +297,37 @@ void BuildStringArray(std::string const& version,
     }
 
     // Insert the initializer for function pointer queries.
+    std::string indent;
+    if (version != "GL_VERSION_1_0")
+    {
+        indent = "        ";
+    }
+    else
+    {
+        indent = "    ";
+    }
     functions.push_back("static void Initialize_OPEN" + version + "()");
     functions.push_back("{");
-    functions.push_back("    if (GetOpenGLVersion() >= OPEN" + version + ")");
-    functions.push_back("    {");
+    if (version != "GL_VERSION_1_0")
+    {
+        functions.push_back("    if (GetOpenGLVersion() >= OPEN" + version + ")");
+        functions.push_back("    {");
+    }
     for (size_t j = 0; j < fnprotos.size(); ++j)
     {
-        std::string line = "        GetOpenGLFunction(\"" +
+        std::string line = indent + "GetOpenGLFunction(\"" +
             fnprotos[j].functionName + "\", s" + fnprotos[j].functionName +
             ");";
         functions.push_back(line);
     }
-    functions.push_back("    }");
+    if (version != "GL_VERSION_1_0")
+    {
+        functions.push_back("    }");
+    }
     functions.push_back("}");
     functions.push_back(gCommentLine);
 }
-//----------------------------------------------------------------------------
+
 void ProcessOpenGLBlock(std::ifstream& input, std::ofstream& output,
     std::string const& version)
 {
@@ -401,7 +414,7 @@ void ProcessOpenGLBlock(std::ifstream& input, std::ofstream& output,
         output << postamble[j] << std::endl;
     }
 }
-//----------------------------------------------------------------------------
+
 int main()
 {
     std::ifstream input("glcorearb.h");
@@ -412,7 +425,7 @@ int main()
 
     WriteOpenGLVersion(output);
 
-    output << "#if !defined(WIN32)" << std::endl;
+    output << "#if !defined(__MSWINDOWS__)" << std::endl;
     output << gCommentLine << std::endl;
     ProcessOpenGLBlock(input, output, "GL_VERSION_1_0");
     ProcessOpenGLBlock(input, output, "GL_VERSION_1_1");
@@ -441,4 +454,3 @@ int main()
     input.close();
     return 0;
 }
-//----------------------------------------------------------------------------

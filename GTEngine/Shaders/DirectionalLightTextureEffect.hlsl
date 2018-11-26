@@ -1,9 +1,9 @@
-// Geometric Tools LLC, Redmond WA 98052
-// Copyright (c) 1998-2015
+// David Eberly, Geometric Tools, Redmond WA 98052
+// Copyright (c) 1998-2018
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
-// File Version: 1.7.0 (2014/12/04)
+// File Version: 3.0.0 (2016/06/19)
 
 cbuffer PVWMatrix
 {
@@ -40,21 +40,26 @@ VS_OUTPUT VSMain(VS_INPUT input)
     return output;
 }
 
-cbuffer Lighting
+cbuffer Material
 {
     float4 materialEmissive;
     float4 materialAmbient;
     float4 materialDiffuse;
     float4 materialSpecular;
-    float4 lightAmbient;
-    float4 lightDiffuse;
-    float4 lightSpecular;
-    float4 lightSpotCutoff;
-    float4 lightAttenuation;
-    float4 cameraModelPosition;
-    float4 lightModelPosition;
+};
+
+cbuffer Lighting
+{
+    float4 lightingAmbient;
+    float4 lightingDiffuse;
+    float4 lightingSpecular;
+    float4 lightingAttenuation;
+};
+
+cbuffer LightCameraGeometry
+{
     float4 lightModelDirection;
-    float4x4 wMatrix;
+    float4 cameraModelPosition;
 };
 
 Texture2D<float4> baseTexture;
@@ -82,14 +87,14 @@ PS_OUTPUT PSMain(PS_INPUT input)
     float3 halfVector = normalize(viewVector - lightModelDirection.xyz);
     float NDotH = dot(normal, halfVector);
     float4 lighting = lit(NDotL, NDotH, materialSpecular.a);
-    float3 lightingColor = materialAmbient.rgb*lightAmbient.rgb +
-        lighting.y*materialDiffuse.rgb*lightDiffuse.rgb +
-        lighting.z*materialSpecular.rgb*lightSpecular.rgb;
+    float3 lightingColor = materialAmbient.rgb * lightingAmbient.rgb +
+        lighting.y * materialDiffuse.rgb * lightingDiffuse.rgb +
+        lighting.z * materialSpecular.rgb * lightingSpecular.rgb;
 
-    float3 textureColor = baseTexture.Sample(baseSampler, input.vertexTCoord).rgb;
+    float4 textureColor = baseTexture.Sample(baseSampler, input.vertexTCoord);
 
-    float3 color = lightingColor*textureColor;
-    output.pixelColor0.rgb = materialEmissive.rgb + lightAttenuation.w*color;
-    output.pixelColor0.a = materialDiffuse.a;
+    float3 color = lightingColor * textureColor.rgb;
+    output.pixelColor0.rgb = materialEmissive.rgb + lightingAttenuation.w * color;
+    output.pixelColor0.a = materialDiffuse.a * textureColor.a;
     return output;
 }

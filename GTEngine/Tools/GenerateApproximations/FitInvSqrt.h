@@ -1,9 +1,9 @@
-// Geometric Tools LLC, Redmond WA 98052
-// Copyright (c) 1998-2015
+// David Eberly, Geometric Tools, Redmond WA 98052
+// Copyright (c) 1998-2018
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
-// File Version: 1.0.1 (2014/12/26)
+// File Version: 3.0.1 (2018/10/05)
 
 #pragma once
 
@@ -30,11 +30,11 @@ private:
     int SignGDer(double x, int const degree, double const* p) const;
 };
 
-//----------------------------------------------------------------------------
+
 FitInvSqrt::FitInvSqrt()
 {
 }
-//----------------------------------------------------------------------------
+
 double FitInvSqrt::G(double x, int const degree, double const* p) const
 {
     int i = degree;
@@ -43,10 +43,10 @@ double FitInvSqrt::G(double x, int const degree, double const* p) const
     {
         result = x*result + p[i];
     }
-    result = 1.0 / sqrt(1.0 + x) - result;
+    result = 1.0 / std::sqrt(1.0 + x) - result;
     return result;
 }
-//----------------------------------------------------------------------------
+
 double FitInvSqrt::GDer(double x, int const degree, double const* p) const
 {
     int i = degree;
@@ -55,22 +55,22 @@ double FitInvSqrt::GDer(double x, int const degree, double const* p) const
     {
         result = x*result + i*p[i];
     }
-    result = -0.5 / pow(1.0 + x, 1.5) - result;
+    result = -0.5 / std::pow(1.0 + x, 1.5) - result;
     return result;
 }
-//----------------------------------------------------------------------------
+
 int FitInvSqrt::SignG(double x, int const degree, double const* p) const
 {
     double g = G(x, degree, p);
     return (g > 0.0 ? 1 : (g < 0.0 ? -1 : 0));
 }
-//----------------------------------------------------------------------------
+
 int FitInvSqrt::SignGDer(double x, int const degree, double const* p) const
 {
     double gder = GDer(x, degree, p);
     return (gder > 0.0 ? 1 : (gder < 0.0 ? -1 : 0));
 }
-//----------------------------------------------------------------------------
+
 template <int Degree>
 void FitInvSqrt::Generate(std::vector<double>& poly, double& error) const
 {
@@ -92,7 +92,7 @@ void FitInvSqrt::Generate(std::vector<double>& poly, double& error) const
         {
             A(r, c) = g0root[r] * A(r, c - 1);
         }
-        B[r] = 1.0 / sqrt(1.0 + g0root[r]);
+        B[r] = 1.0 / std::sqrt(1.0 + g0root[r]);
     }
     Vector<Degree + 1, double> p = Inverse(A) * B;
     double absError[Degree], e;
@@ -155,14 +155,14 @@ void FitInvSqrt::Generate(std::vector<double>& poly, double& error) const
                 A(r, c) = g1root[r] * A(r, c - 1);
             }
             A(r, Degree) = sign;
-            B[r] = 1.0 / sqrt(1.0 + g1root[r]) - 1.0;
+            B[r] = 1.0 / std::sqrt(1.0 + g1root[r]) - 1.0;
         }
         for (int c = 0; c < Degree; ++c)
         {
             A(Degree, c) = 1.0;
         }
         A(Degree, Degree) = 0.0;
-        B[Degree] = 1.0 / sqrt(2.0) - 1.0;
+        B[Degree] = 1.0 / std::sqrt(2.0) - 1.0;
 
         Vector<Degree + 1, double> X = Inverse(A)*B;
         for (int i = 0; i < Degree; ++i)
@@ -218,4 +218,4 @@ void FitInvSqrt::Generate(std::vector<double>& poly, double& error) const
     }
     error = e;
 }
-//----------------------------------------------------------------------------
+

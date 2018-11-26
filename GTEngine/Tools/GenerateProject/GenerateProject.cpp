@@ -1,15 +1,16 @@
-// Geometric Tools LLC, Redmond WA 98052
-// Copyright (c) 1998-2015
+// David Eberly, Geometric Tools, Redmond WA 98052
+// Copyright (c) 1998-2018
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
-// File Version: 1.0.0 (2014/08/11)
+// File Version: 3.0.1 (2017/07/06)
 
 #include <cstdlib>
 #include <iostream>
-#include "ProjectTemplate.h"
+#include "ProjectTemplate.v12.h"
+#include "ProjectTemplate.v14.h"
+#include "ProjectTemplate.v15.h"
 
-//----------------------------------------------------------------------------
 int main(int numArguments, char* arguments[])
 {
     if (3 != numArguments)
@@ -30,7 +31,7 @@ int main(int numArguments, char* arguments[])
         return -2;
     }
 
-    // Generate the relative path to GTEngine.vcxproj.
+    // Generate the relative path to GTEngine.v<version>.vcxproj.
     std::string gtPath;
     for (int i = 0; i < nesting; ++i)
     {
@@ -40,13 +41,27 @@ int main(int numArguments, char* arguments[])
     // Generate the files for the project.
     std::string name = arguments[2];
     bool success = false;
-    TemplateVC120 generate(name, gtPath, success);
+    TemplateV12 generatev12(name, gtPath, success);
     if (!success)
     {
-        std::cout << "Could not create the project files." << std::endl;
+        std::cout << "Could not create the V12 project files." << std::endl;
         return -5;
+    }
+
+    TemplateV14 generatev14(name, gtPath, success);
+    if (!success)
+    {
+        std::cout << "Could not create the V14 project files." << std::endl;
+        return -6;
+    }
+
+    TemplateV15 generatev15(name, gtPath, success);
+    if (!success)
+    {
+        std::cout << "Could not create the V15 project files." << std::endl;
+        return -7;
     }
 
     return 0;
 }
-//----------------------------------------------------------------------------
+

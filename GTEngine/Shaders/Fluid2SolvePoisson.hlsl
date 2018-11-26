@@ -1,9 +1,9 @@
-// Geometric Tools LLC, Redmond WA 98052
-// Copyright (c) 1998-2015
+// David Eberly, Geometric Tools, Redmond WA 98052
+// Copyright (c) 1998-2018
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
-// File Version: 1.7.0 (2014/12/04)
+// File Version: 3.0.0 (2016/06/19)
 
 cbuffer Parameters
 {
@@ -35,7 +35,7 @@ void CSMain(uint2 c : SV_DispatchThreadID)
     // Sample the divergence at (x,y).
     float div = divergence[int2(x, y)];
 
-    // Sample Poisson values at (x,y), (x+dx,y), (x-dx,y), (x,y+dy), (x,y-dy).
+    // Sample Poisson values at (x+dx,y), (x-dx,y), (x,y+dy), (x,y-dy).
     float poisPZ = poisson[int2(xp, y)];
     float poisMZ = poisson[int2(xm, y)];
     float poisZP = poisson[int2(x, yp)];

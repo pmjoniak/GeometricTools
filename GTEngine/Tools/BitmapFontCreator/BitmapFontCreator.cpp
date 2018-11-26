@@ -1,12 +1,13 @@
-// Geometric Tools LLC, Redmond WA 98052
-// Copyright (c) 1998-2015
+// David Eberly, Geometric Tools, Redmond WA 98052
+// Copyright (c) 1998-2018
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
-// File Version: 1.0.0 (2014/08/11)
+// File Version: 3.0.1 (2018/10/30)
 
 #include <windows.h>
 #include <string>
+#include <vector>
 
 std::wstring const gNameSpace = L"gte";
 std::wstring const gMacroPrefix = L"GTE";
@@ -14,14 +15,11 @@ std::wstring const gFilePrefix = L"Gte";
 LONG gWindowWidth = 1024;
 LONG gWindowHeight = 256;
 
-//----------------------------------------------------------------------------
-bool CreateHeaderFile(std::wstring const& fontName, int weight, int size,
-    DWORD italic)
+bool CreateHeaderFile(std::wstring const& fontName, int weight, int size, DWORD italic)
 {
     size_t const maxCharacters = 1024;
     wchar_t temp[maxCharacters];
-    swprintf(temp, maxCharacters, L"Font%sW%dH%d", fontName.c_str(), weight,
-        size);
+    swprintf(temp, maxCharacters, L"Font%sW%dH%d", fontName.c_str(), weight, size);
     std::wstring className(temp);
     if (italic)
     {
@@ -37,8 +35,8 @@ bool CreateHeaderFile(std::wstring const& fontName, int weight, int size,
     }
 
     wchar_t const* cn = className.c_str();
-    fwprintf(output, L"// Geometric Tools LLC, Redmond WA 98052\n");
-    fwprintf(output, L"// Copyright (c) 1998-2014\n");
+    fwprintf(output, L"// David Eberly, Geometric Tools, Redmond WA 98052\n");
+    fwprintf(output, L"// Copyright (c) 1998-2018\n");
     fwprintf(output, L"// Distributed under the Boost Software License, Version 1.0.\n");
     fwprintf(output, L"// http://www.boost.org/LICENSE_1_0.txt\n");
     fwprintf(output, L"// http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt\n");
@@ -69,15 +67,14 @@ bool CreateHeaderFile(std::wstring const& fontName, int weight, int size,
     fclose(output);
     return true;
 }
-//----------------------------------------------------------------------------
+
 bool CreateSourceFile(std::wstring const& fontName, int weight, int size,
-    DWORD italic, int width, int height, unsigned char const* texels,
+    DWORD italic, int width, int height, std::vector<unsigned char> const& texels,
     float const* characterData)
 {
     size_t const maxCharacters = 1024;
     wchar_t temp[maxCharacters];
-    swprintf(temp, maxCharacters, L"Font%sW%dH%d", fontName.c_str(), weight,
-        size);
+    swprintf(temp, maxCharacters, L"Font%sW%dH%d", fontName.c_str(), weight, size);
     std::wstring className(temp);
     if (italic)
     {
@@ -95,7 +92,7 @@ bool CreateSourceFile(std::wstring const& fontName, int weight, int size,
 
     wchar_t const* cn = className.c_str();
     int const numTexels = width*height;
-    fwprintf(output, L"// Geometric Tools LLC, Redmond WA 98052\n");
+    fwprintf(output, L"// David Eberly, Geometric Tools, Redmond WA 98052\n");
     fwprintf(output, L"// Copyright (c) 1998-2014\n");
     fwprintf(output, L"// Distributed under the Boost Software License, Version 1.0.\n");
     fwprintf(output, L"// http://www.boost.org/LICENSE_1_0.txt\n");
@@ -105,18 +102,18 @@ bool CreateSourceFile(std::wstring const& fontName, int weight, int size,
     fwprintf(output, L"#include \"%s.h\"\n", fileName.c_str());
     fwprintf(output, L"using namespace %s;\n", gNameSpace.c_str());
     fwprintf(output, L"\n");
-    fwprintf(output, L"//----------------------------------------------------------------------------\n");
+    fwprintf(output, L"\n");
     fwprintf(output, L"%s::~%s()\n", cn, cn);
     fwprintf(output, L"{\n");
     fwprintf(output, L"}\n");
-    fwprintf(output, L"//----------------------------------------------------------------------------\n");
+    fwprintf(output, L"\n");
     fwprintf(output, L"%s::%s(int maxMessageLength)\n", cn, cn);
     fwprintf(output, L"    :\n");
     fwprintf(output, L"    Font(msWidth, msHeight, (char const*)msTexels, msCharacterData,\n");
     fwprintf(output, L"        maxMessageLength)\n");
     fwprintf(output, L"{\n");
     fwprintf(output, L"}\n");
-    fwprintf(output, L"//----------------------------------------------------------------------------\n");
+    fwprintf(output, L"\n");
     fwprintf(output, L"\n");
     fwprintf(output, L"int %s::msWidth = %d;\n", cn, width);
     fwprintf(output, L"int %s::msHeight = %d;\n", cn, height);
@@ -124,9 +121,10 @@ bool CreateSourceFile(std::wstring const& fontName, int weight, int size,
     fwprintf(output, L"unsigned char %s::msTexels[%d] =\n", cn, numTexels);
     fwprintf(output, L"{\n");
     int numPerRow = 16, numPerRowM1 = numPerRow - 1;
-    for (int i = 0; i < numTexels; ++i, ++texels)
+    unsigned char const* currentTexel = texels.data();
+    for (int i = 0; i < numTexels; ++i, ++currentTexel)
     {
-        fwprintf(output, L"%3d, ", *texels);
+        fwprintf(output, L"%3d, ", *currentTexel);
         if ((i % numPerRow) == numPerRowM1)
         {
             fwprintf(output, L"\n");
@@ -153,8 +151,8 @@ bool CreateSourceFile(std::wstring const& fontName, int weight, int size,
     fclose(output);
     return true;
 }
-//----------------------------------------------------------------------------
-void CreateFontData(HDC hDC, int& width, int& height, unsigned char*& texels,
+
+void CreateFontData(HDC hDC, int& width, int& height, std::vector<unsigned char>& texels,
     float characterData[257])
 {
     // Get the height of the font.
@@ -172,7 +170,7 @@ void CreateFontData(HDC hDC, int& width, int& height, unsigned char*& texels,
         width += (charWidth + 1);
     }
 
-    texels = new unsigned char[width*height];
+    texels.resize(width * height);
 
     // The character data stores textures coordinates in the x-direction.
     float const dx = 1.0f/width;
@@ -220,7 +218,7 @@ void CreateFontData(HDC hDC, int& width, int& height, unsigned char*& texels,
         start += charWidth;
     }
 }
-//----------------------------------------------------------------------------
+
 void ProcessFont(HWND hWnd, std::wstring const& fontName, int weight,
     int size, DWORD italic)
 {
@@ -246,7 +244,7 @@ void ProcessFont(HWND hWnd, std::wstring const& fontName, int weight,
     TextOut(hDC, 8, 3*size, msg, (int)wcslen(msg));
 
     int width, height;
-    unsigned char* texels;
+    std::vector<unsigned char> texels;
     float characterData[257];
     CreateFontData(hDC, width, height, texels, characterData);
 
@@ -254,13 +252,11 @@ void ProcessFont(HWND hWnd, std::wstring const& fontName, int weight,
     CreateSourceFile(fontName, weight, size, italic, width, height, texels,
         characterData);
 
-    delete[] texels;
-
     SelectObject(hDC, oldFont);
     DeleteObject(hFont);
     ReleaseDC(hWnd, hDC);
 }
-//----------------------------------------------------------------------------
+
 int wmain(int, wchar_t const*[])
 {
     wchar_t* className = L"BitmapFontCreator";
@@ -284,9 +280,9 @@ int wmain(int, wchar_t const*[])
     ShowWindow(hWnd, SW_SHOW);
     UpdateWindow(hWnd);
 
-    std::wstring fontName = L"Verdana";
-    int weight = FW_NORMAL;
-    int size = 12;
+    std::wstring fontName = L"Arial";
+    int weight = FW_SEMIBOLD;
+    int size = 36;
     DWORD italic = 0;
     ProcessFont(hWnd, fontName, weight, size, italic);
 
@@ -294,4 +290,3 @@ int wmain(int, wchar_t const*[])
     UnregisterClass(className, nullptr);
     return 0;
 }
-//----------------------------------------------------------------------------

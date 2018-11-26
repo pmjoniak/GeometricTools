@@ -1,6 +1,6 @@
-void InitializeOpenGL(char const* infofile)
+void InitializeOpenGL(int& major, int& minor, char const* infofile)
 {
-#if !defined(WIN32)
+#if !defined(__MSWINDOWS__)
     Initialize_OPENGL_VERSION_1_0();
     Initialize_OPENGL_VERSION_1_1();
 #endif
@@ -71,22 +71,49 @@ void InitializeOpenGL(char const* infofile)
             }
             else
             {
-                char const* extensions =
-                    (char const*)glGetString(GL_EXTENSIONS);
+                char const* extensions = (char const*)glGetString(GL_EXTENSIONS);
                 if (extensions)
                 {
                     output << "extensions =" << std::endl;
-                    size_t numBytes = strlen(extensions) + 1;
-                    char* extension = new char[numBytes];
-                    strcpy_s(extension, numBytes, extensions);
-                    char* nextToken = nullptr;
-                    char* token = strtok_s(extension, " \t\n", &nextToken);
-                    while (token)
+                    std::string tokenString(extensions);
+                    std::vector<std::string> tokens;
+                    tokens.clear();
+                    while (tokenString.length() > 0)
+                    {
+                        // Find the beginning of a token.
+                        auto begin = tokenString.find_first_not_of(" \t");
+                        if (begin == std::string::npos)
+                        {
+                            // All tokens have been found.
+                            break;
+                        }
+
+                        // Strip off the white space.
+                        if (begin > 0)
+                        {
+                            tokenString = tokenString.substr(begin);
+                        }
+
+                        // Find the end of the token.
+                        auto end = tokenString.find_first_of(" \t");
+                        if (end != std::string::npos)
+                        {
+                            std::string token = tokenString.substr(0, end);
+                            tokens.push_back(token);
+                            tokenString = tokenString.substr(end);
+                        }
+                        else
+                        {
+                            // This is the last token.
+                            tokens.push_back(tokenString);
+                            break;
+                        }
+                    }
+
+                    for (auto const& token : tokens)
                     {
                         output << "    " << token << std::endl;
-                        token = strtok_s(nullptr, " \t\n", &nextToken);
                     }
-                    delete[] extension;
                 }
                 else
                 {
@@ -97,5 +124,7 @@ void InitializeOpenGL(char const* infofile)
             output.close();
         }
     }
+
+    glGetIntegerv(GL_MAJOR_VERSION, &major);
+    glGetIntegerv(GL_MINOR_VERSION, &minor);
 }
-//----------------------------------------------------------------------------
