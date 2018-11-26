@@ -1,9 +1,9 @@
-// Geometric Tools LLC, Redmond WA 98052
-// Copyright (c) 1998-2015
+// David Eberly, Geometric Tools, Redmond WA 98052
+// Copyright (c) 1998-2018
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
-// File Version: 1.0.1 (2014/12/26)
+// File Version: 3.0.1 (2018/10/05)
 
 #pragma once
 
@@ -32,11 +32,11 @@ private:
     int SignGDer(double x, int const order, double const* p) const;
 };
 
-//----------------------------------------------------------------------------
+
 FitTan::FitTan()
 {
 }
-//----------------------------------------------------------------------------
+
 double FitTan::G(double x, int const order, double const* p) const
 {
     double xsqr = x * x;
@@ -46,10 +46,10 @@ double FitTan::G(double x, int const order, double const* p) const
     {
         result = xsqr*result + p[i];
     }
-    result = tan(x) - x * result;
+    result = std::tan(x) - x * result;
     return result;
 }
-//----------------------------------------------------------------------------
+
 double FitTan::GDer(double x, int const order, double const* p) const
 {
     double xsqr = x * x;
@@ -59,23 +59,23 @@ double FitTan::GDer(double x, int const order, double const* p) const
     {
         result = xsqr*result + (2 * i + 1)*p[i];
     }
-    double cs = cos(x);
+    double cs = std::cos(x);
     result = 1.0 / (cs*cs) - result;
     return result;
 }
-//----------------------------------------------------------------------------
+
 int FitTan::SignG(double x, int const order, double const* p) const
 {
     double g = G(x, order, p);
     return (g > 0.0 ? 1 : (g < 0.0 ? -1 : 0));
 }
-//----------------------------------------------------------------------------
+
 int FitTan::SignGDer(double x, int const order, double const* p) const
 {
     double gder = GDer(x, order, p);
     return (gder > 0.0 ? 1 : (gder < 0.0 ? -1 : 0));
 }
-//----------------------------------------------------------------------------
+
 template <int Order>
 void FitTan::Generate(std::vector<double>& poly, double& error) const
 {
@@ -104,7 +104,7 @@ void FitTan::Generate(std::vector<double>& poly, double& error) const
         {
             A(r, c) = xsqr * A(r, c - 1);
         }
-        B[r] = tan(x);
+        B[r] = std::tan(x);
     }
     Vector<Order + 1, double> p = Inverse(A) * B;
 
@@ -171,7 +171,7 @@ void FitTan::Generate(std::vector<double>& poly, double& error) const
                 A(r, c) = xsqr * A(r, c - 1);
             }
             A(r, Order) = sign;
-            B[r] = tan(x) - x;
+            B[r] = std::tan(x) - x;
         }
         double x = GTE_C_QUARTER_PI, xsqr = x * x;
         A(Order, 0) = xsqr * x;
@@ -180,7 +180,7 @@ void FitTan::Generate(std::vector<double>& poly, double& error) const
             A(Order, c) = xsqr * A(Order, c - 1);
         }
         A(Order, Order) = 0.0;
-        B[Order] = tan(x) - x;
+        B[Order] = std::tan(x) - x;
 
         Vector<Order + 1, double> X = Inverse(A)*B;
         for (int i = 0; i < Order; ++i)
@@ -236,4 +236,4 @@ void FitTan::Generate(std::vector<double>& poly, double& error) const
     }
     error = e;
 }
-//----------------------------------------------------------------------------
+

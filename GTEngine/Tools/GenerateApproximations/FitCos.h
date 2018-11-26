@@ -1,9 +1,9 @@
-// Geometric Tools LLC, Redmond WA 98052
-// Copyright (c) 1998-2015
+// David Eberly, Geometric Tools, Redmond WA 98052
+// Copyright (c) 1998-2018
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
-// File Version: 1.0.1 (2014/12/26)
+// File Version: 3.0.1 (2018/10/05)
 
 #pragma once
 
@@ -32,11 +32,11 @@ private:
     int SignGDer(double x, int const order, double const* p) const;
 };
 
-//----------------------------------------------------------------------------
+
 FitCos::FitCos()
 {
 }
-//----------------------------------------------------------------------------
+
 double FitCos::G(double x, int const order, double const* p) const
 {
     double xsqr = x * x;
@@ -46,10 +46,10 @@ double FitCos::G(double x, int const order, double const* p) const
     {
         result = xsqr*result + p[i];
     }
-    result = cos(x) - result;
+    result = std::cos(x) - result;
     return result;
 }
-//----------------------------------------------------------------------------
+
 double FitCos::GDer(double x, int const order, double const* p) const
 {
     double xsqr = x * x;
@@ -59,22 +59,22 @@ double FitCos::GDer(double x, int const order, double const* p) const
     {
         result = xsqr*result + (2 * i)*p[i];
     }
-    result = -sin(x) - x * result;
+    result = -std::sin(x) - x * result;
     return result;
 }
-//----------------------------------------------------------------------------
+
 int FitCos::SignG(double x, int const order, double const* p) const
 {
     double g = G(x, order, p);
     return (g > 0.0 ? 1 : (g < 0.0 ? -1 : 0));
 }
-//----------------------------------------------------------------------------
+
 int FitCos::SignGDer(double x, int const order, double const* p) const
 {
     double gder = GDer(x, order, p);
     return (gder > 0.0 ? 1 : (gder < 0.0 ? -1 : 0));
 }
-//----------------------------------------------------------------------------
+
 template <int Order>
 void FitCos::Generate(std::vector<double>& poly, double& error) const
 {
@@ -103,7 +103,7 @@ void FitCos::Generate(std::vector<double>& poly, double& error) const
         {
             A(r, c) = xsqr * A(r, c - 1);
         }
-        B[r] = cos(x);
+        B[r] = std::cos(x);
     }
     Vector<Order + 1, double> p = Inverse(A) * B;
 
@@ -171,7 +171,7 @@ void FitCos::Generate(std::vector<double>& poly, double& error) const
                 A(r, c) = xsqr * A(r, c - 1);
             }
             A(r, Order) = sign;
-            B[r] = cos(x) - 1.0;
+            B[r] = std::cos(x) - 1.0;
         }
         double x = GTE_C_HALF_PI, xsqr = x * x;
         A(Order, 0) = xsqr;
@@ -180,7 +180,7 @@ void FitCos::Generate(std::vector<double>& poly, double& error) const
             A(Order, c) = xsqr * A(Order, c - 1);
         }
         A(Order, Order) = 0.0;
-        B[Order] = cos(x) - 1.0;
+        B[Order] = std::cos(x) - 1.0;
 
         Vector<Order + 1, double> X = Inverse(A)*B;
         for (int i = 0; i < Order; ++i)
@@ -236,4 +236,4 @@ void FitCos::Generate(std::vector<double>& poly, double& error) const
     }
     error = e;
 }
-//----------------------------------------------------------------------------
+

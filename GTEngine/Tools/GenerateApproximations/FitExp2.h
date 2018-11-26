@@ -1,9 +1,9 @@
-// Geometric Tools LLC, Redmond WA 98052
-// Copyright (c) 1998-2015
+// David Eberly, Geometric Tools, Redmond WA 98052
+// Copyright (c) 1998-2018
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
-// File Version: 1.0.1 (2014/12/26)
+// File Version: 3.0.1 (2018/10/05)
 
 #pragma once
 
@@ -30,11 +30,11 @@ private:
     int SignGDer(double x, int const degree, double const* p) const;
 };
 
-//----------------------------------------------------------------------------
+
 FitExp2::FitExp2()
 {
 }
-//----------------------------------------------------------------------------
+
 double FitExp2::G(double x, int const degree, double const* p) const
 {
     int i = degree;
@@ -43,10 +43,10 @@ double FitExp2::G(double x, int const degree, double const* p) const
     {
         result = x*result + p[i];
     }
-    result = pow(2.0, x) - result;
+    result = std::pow(2.0, x) - result;
     return result;
 }
-//----------------------------------------------------------------------------
+
 double FitExp2::GDer(double x, int const degree, double const* p) const
 {
     int i = degree;
@@ -55,22 +55,22 @@ double FitExp2::GDer(double x, int const degree, double const* p) const
     {
         result = x*result + i*p[i];
     }
-    result = log(2.0)*pow(2.0, x) - result;
+    result = std::log(2.0) * std::pow(2.0, x) - result;
     return result;
 }
-//----------------------------------------------------------------------------
+
 int FitExp2::SignG(double x, int const degree, double const* p) const
 {
     double g = G(x, degree, p);
     return (g > 0.0 ? 1 : (g < 0.0 ? -1 : 0));
 }
-//----------------------------------------------------------------------------
+
 int FitExp2::SignGDer(double x, int const degree, double const* p) const
 {
     double gder = GDer(x, degree, p);
     return (gder > 0.0 ? 1 : (gder < 0.0 ? -1 : 0));
 }
-//----------------------------------------------------------------------------
+
 template <int Degree>
 void FitExp2::Generate(std::vector<double>& poly, double& error) const
 {
@@ -92,7 +92,7 @@ void FitExp2::Generate(std::vector<double>& poly, double& error) const
         {
             A(r, c) = g0root[r] * A(r, c - 1);
         }
-        B[r] = pow(2.0, g0root[r]);
+        B[r] = std::pow(2.0, g0root[r]);
     }
     Vector<Degree + 1, double> p = Inverse(A) * B;
     double absError[Degree], e;
@@ -155,7 +155,7 @@ void FitExp2::Generate(std::vector<double>& poly, double& error) const
                 A(r, c) = g1root[r] * A(r, c - 1);
             }
             A(r, Degree) = sign;
-            B[r] = pow(2.0, g1root[r]) - 1.0;
+            B[r] = std::pow(2.0, g1root[r]) - 1.0;
         }
         for (int c = 0; c < Degree; ++c)
         {
@@ -218,4 +218,4 @@ void FitExp2::Generate(std::vector<double>& poly, double& error) const
     }
     error = e;
 }
-//----------------------------------------------------------------------------
+

@@ -1,9 +1,9 @@
-// Geometric Tools LLC, Redmond WA 98052
-// Copyright (c) 1998-2015
+// David Eberly, Geometric Tools, Redmond WA 98052
+// Copyright (c) 1998-2018
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
-// File Version: 1.0.0 (2014/08/11)
+// File Version: 3.0.2 (2018/06/21)
 
 #pragma once
 
@@ -18,11 +18,22 @@
 #define __glext_h_
 #define __GLEXT_H_
 
-#if defined(WIN32)
-
-// We support only Microsoft Visual Studio 2013 and later on the Microsoft
-// Windows platform.
-#if !defined(_MSC_VER) || _MSC_VER < 1800
+#if defined(WIN32) || defined(_WIN64)
+#define __MSWINDOWS__
+#if !defined(_MSC_VER)
+#error Microsoft Visual Studio 2013 or later is required.
+#endif
+//  MSVC  6   is version 12.0
+//  MSVC  7.0 is version 13.0 (MSVS 2002)
+//  MSVC  7.1 is version 13.1 (MSVS 2003)
+//  MSVC  8.0 is version 14.0 (MSVS 2005)
+//  MSVC  9.0 is version 15.0 (MSVS 2008)
+//  MSVC 10.0 is version 16.0 (MSVS 2010)
+//  MSVC 11.0 is version 17.0 (MSVS 2012)
+//  MSVC 12.0 is version 18.0 (MSVS 2013)
+//  MSVC 14.0 is version 19.0 (MSVS 2015)
+//  Currently, projects are provided only for MSVC 12.0 and 14.0.
+#if _MSC_VER < 1800
 #error Microsoft Visual Studio 2013 or later is required.
 #endif
 
@@ -338,20 +349,20 @@ extern void InitializeWGL();
 
 // Use the prototypes provided by glcorearb.h.
 #define GL_GLEXT_PROTOTYPES
-#include <GL/glcorearb.h>
+#if defined(__MSWINDOWS__)
+// Disable the Windows.h min and max macros.
+#define NOMINMAX
+#endif
+#include <Graphics/GL4/GL/glcorearb.h>
 
 // Call this function before using OpenGL in your code.  To see what your
 // driver supports, pass in a file name to which the information will be
 // stored.  For no information, pass in nullptr.
-extern void InitializeOpenGL(char const* infofile);
+extern void InitializeOpenGL(int& major, int& minor, char const* infofile);
 
-#if defined(WIN32)
-inline BOOL MakeCurrent(HDC device, HGLRC context)
-{
-    if (context != wglGetCurrentContext())
-    {
-        return wglMakeCurrent(device, context);
-    }
-    return GL_TRUE;
-}
+#if defined(__LINUX__)
+// The function pointer lookup used to use only glXGetProcAddress.  Now it
+// allows eglGetProcAddress for headless rendering.  If you want to use
+// EGL, set gUseEGLGetProcAddress to 'true' before calling InitializeOpenGL.
+extern bool gUseEGLGetProcAddress;
 #endif

@@ -1,9 +1,9 @@
-// Geometric Tools LLC, Redmond WA 98052
-// Copyright (c) 1998-2015
+// David Eberly, Geometric Tools, Redmond WA 98052
+// Copyright (c) 1998-2018
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
-// File Version: 1.0.0 (2014/08/11)
+// File Version: 3.0.0 (2016/06/19)
 
 #include "FitSqrt.h"
 #include "FitInvSqrt.h"
@@ -15,15 +15,17 @@
 #include "FitExp2.h"
 #include "FitLog2.h"
 
-//----------------------------------------------------------------------------
+
 int main(int, char const*[])
 {
+#if defined(_DEBUG)
     LogReporter reporter(
         "LogReport.txt",
         Logger::Listener::LISTEN_FOR_ALL,
         Logger::Listener::LISTEN_FOR_ALL,
         Logger::Listener::LISTEN_FOR_ALL,
         Logger::Listener::LISTEN_FOR_ALL);
+#endif
 
     FitSqrt fitterSqrt;
     FitInvSqrt fitterInvSqrt;
@@ -39,4 +41,4 @@ int main(int, char const*[])
     fitterSin.Generate<6>(poly, error);
     return 0;
 }
-//----------------------------------------------------------------------------
+

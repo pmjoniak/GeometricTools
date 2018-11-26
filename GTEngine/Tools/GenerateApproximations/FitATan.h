@@ -1,9 +1,9 @@
-// Geometric Tools LLC, Redmond WA 98052
-// Copyright (c) 1998-2015
+// David Eberly, Geometric Tools, Redmond WA 98052
+// Copyright (c) 1998-2018
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
-// File Version: 1.0.1 (2014/12/26)
+// File Version: 3.0.1 (2018/10/05)
 
 #pragma once
 
@@ -32,11 +32,11 @@ private:
     int SignGDer(double x, int const order, double const* p) const;
 };
 
-//----------------------------------------------------------------------------
+
 FitATan::FitATan()
 {
 }
-//----------------------------------------------------------------------------
+
 double FitATan::G(double x, int const order, double const* p) const
 {
     double xsqr = x * x;
@@ -49,7 +49,7 @@ double FitATan::G(double x, int const order, double const* p) const
     result = atan(x) - x * result;
     return result;
 }
-//----------------------------------------------------------------------------
+
 double FitATan::GDer(double x, int const order, double const* p) const
 {
     double xsqr = x * x;
@@ -62,19 +62,19 @@ double FitATan::GDer(double x, int const order, double const* p) const
     result = 1.0 / (1.0 + xsqr) - result;
     return result;
 }
-//----------------------------------------------------------------------------
+
 int FitATan::SignG(double x, int const order, double const* p) const
 {
     double g = G(x, order, p);
     return (g > 0.0 ? 1 : (g < 0.0 ? -1 : 0));
 }
-//----------------------------------------------------------------------------
+
 int FitATan::SignGDer(double x, int const order, double const* p) const
 {
     double gder = GDer(x, order, p);
     return (gder > 0.0 ? 1 : (gder < 0.0 ? -1 : 0));
 }
-//----------------------------------------------------------------------------
+
 template <int Order>
 void FitATan::Generate(std::vector<double>& poly, double& error) const
 {
@@ -103,7 +103,7 @@ void FitATan::Generate(std::vector<double>& poly, double& error) const
         {
             A(r, c) = xsqr * A(r, c - 1);
         }
-        B[r] = atan(x);
+        B[r] = std::atan(x);
     }
     Vector<Order + 1, double> p = Inverse(A) * B;
 
@@ -170,7 +170,7 @@ void FitATan::Generate(std::vector<double>& poly, double& error) const
                 A(r, c) = xsqr * A(r, c - 1);
             }
             A(r, Order) = sign;
-            B[r] = atan(x) - x;
+            B[r] = std::atan(x) - x;
         }
         double x = 1.0, xsqr = x * x;
         A(Order, 0) = xsqr * x;
@@ -179,7 +179,7 @@ void FitATan::Generate(std::vector<double>& poly, double& error) const
             A(Order, c) = xsqr * A(Order, c - 1);
         }
         A(Order, Order) = 0.0;
-        B[Order] = atan(x) - x;
+        B[Order] = std::atan(x) - x;
 
         Vector<Order + 1, double> X = Inverse(A)*B;
         for (int i = 0; i < Order; ++i)
@@ -235,4 +235,4 @@ void FitATan::Generate(std::vector<double>& poly, double& error) const
     }
     error = e;
 }
-//----------------------------------------------------------------------------
+

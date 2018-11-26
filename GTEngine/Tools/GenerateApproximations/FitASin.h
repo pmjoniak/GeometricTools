@@ -1,9 +1,9 @@
-// Geometric Tools LLC, Redmond WA 98052
-// Copyright (c) 1998-2015
+// David Eberly, Geometric Tools, Redmond WA 98052
+// Copyright (c) 1998-2018
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
-// File Version: 1.0.1 (2014/12/26)
+// File Version: 3.0.1 (2018/10/05)
 
 #pragma once
 
@@ -37,35 +37,35 @@ private:
     int SignGDer(double x, int const degree, double const* p) const;
 };
 
-//----------------------------------------------------------------------------
+
 FitASin::FitASin()
 {
 }
-//----------------------------------------------------------------------------
+
 double FitASin::F(double x) const
 {
     if (x < 1.0)
     {
-        return (GTE_C_HALF_PI - asin(x)) / sqrt(1.0 - x);
+        return (GTE_C_HALF_PI - std::asin(x)) / std::sqrt(1.0 - x);
     }
     else
     {
         return GTE_C_SQRT_2;
     }
 }
-//----------------------------------------------------------------------------
+
 double FitASin::FDer(double x) const
 {
     if (x < 1.0)
     {
-        return (-1.0 / sqrt(1.0 + x) + 0.5 * F(x)) / (1.0 - x);
+        return (-1.0 / std::sqrt(1.0 + x) + 0.5 * F(x)) / (1.0 - x);
     }
     else
     {
-        return -pow(2.0, -1.5) / 3.0;
+        return -std::pow(2.0, -1.5) / 3.0;
     }
 }
-//----------------------------------------------------------------------------
+
 double FitASin::G(double x, int const degree, double const* p) const
 {
     int i = degree;
@@ -77,7 +77,7 @@ double FitASin::G(double x, int const degree, double const* p) const
     result = F(x) - result;
     return result;
 }
-//----------------------------------------------------------------------------
+
 double FitASin::GDer(double x, int const degree, double const* p) const
 {
     int i = degree;
@@ -89,19 +89,19 @@ double FitASin::GDer(double x, int const degree, double const* p) const
     result = FDer(x) - result;
     return result;
 }
-//----------------------------------------------------------------------------
+
 int FitASin::SignG(double x, int const degree, double const* p) const
 {
     double g = G(x, degree, p);
     return (g > 0.0 ? 1 : (g < 0.0 ? -1 : 0));
 }
-//----------------------------------------------------------------------------
+
 int FitASin::SignGDer(double x, int const degree, double const* p) const
 {
     double gder = GDer(x, degree, p);
     return (gder > 0.0 ? 1 : (gder < 0.0 ? -1 : 0));
 }
-//----------------------------------------------------------------------------
+
 template <int Degree>
 void FitASin::Generate(std::vector<double>& poly, double& error) const
 {
@@ -257,4 +257,4 @@ void FitASin::Generate(std::vector<double>& poly, double& error) const
     }
     error = e;
 }
-//----------------------------------------------------------------------------
+

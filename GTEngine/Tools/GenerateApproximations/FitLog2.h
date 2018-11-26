@@ -1,9 +1,9 @@
-// Geometric Tools LLC, Redmond WA 98052
-// Copyright (c) 1998-2015
+// David Eberly, Geometric Tools, Redmond WA 98052
+// Copyright (c) 1998-2018
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
-// File Version: 1.0.1 (2014/12/26)
+// File Version: 3.0.0 (2016/06/19)
 
 #pragma once
 
@@ -35,21 +35,21 @@ private:
     int SignGDer(double x, int const degree, double const* p) const;
 };
 
-//----------------------------------------------------------------------------
+
 FitLog2::FitLog2()
 {
 }
-//----------------------------------------------------------------------------
+
 double FitLog2::F(double x) const
 {
-    return log(1.0 + x) / log(2.0);
+    return std::log(1.0 + x) / std::log(2.0);
 }
-//----------------------------------------------------------------------------
+
 double FitLog2::FDer(double x) const
 {
-    return 1.0 / (log(2.0)*(1.0 + x));
+    return 1.0 / (std::log(2.0) * (1.0 + x));
 }
-//----------------------------------------------------------------------------
+
 double FitLog2::G(double x, int const degree, double const* p) const
 {
     int i = degree;
@@ -61,7 +61,7 @@ double FitLog2::G(double x, int const degree, double const* p) const
     result = F(x) - result;
     return result;
 }
-//----------------------------------------------------------------------------
+
 double FitLog2::GDer(double x, int const degree, double const* p) const
 {
     int i = degree;
@@ -73,19 +73,19 @@ double FitLog2::GDer(double x, int const degree, double const* p) const
     result = FDer(x) - result;
     return result;
 }
-//----------------------------------------------------------------------------
+
 int FitLog2::SignG(double x, int const degree, double const* p) const
 {
     double g = G(x, degree, p);
     return (g > 0.0 ? 1 : (g < 0.0 ? -1 : 0));
 }
-//----------------------------------------------------------------------------
+
 int FitLog2::SignGDer(double x, int const degree, double const* p) const
 {
     double gder = GDer(x, degree, p);
     return (gder > 0.0 ? 1 : (gder < 0.0 ? -1 : 0));
 }
-//----------------------------------------------------------------------------
+
 template <int Degree>
 void FitLog2::Generate(std::vector<double>& poly, double& error) const
 {
@@ -239,4 +239,4 @@ void FitLog2::Generate(std::vector<double>& poly, double& error) const
     }
     error = e;
 }
-//----------------------------------------------------------------------------
+
