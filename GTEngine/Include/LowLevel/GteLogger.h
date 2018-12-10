@@ -15,7 +15,7 @@
 // Uncomment this to turn off the logging system.  The macros LogAssert,
 // LogError, LogWarning, and LogInformation expand to nothing.  (Do this for
 // optimal performance.)
-//#define GTE_NO_LOGGER
+#define GTE_NO_LOGGER
 
 namespace gte
 {
